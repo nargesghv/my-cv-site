@@ -1,103 +1,122 @@
-import Image from "next/image";
+'use client';
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const pathname = usePathname();
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const navLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/cv', label: 'CV' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/contact', label: 'Contact' },
+  ];
+
+  return (
+    <main className="min-h-screen bg-gradient-to-br from-[#fdf6f0] to-[#e7e0d8] text-black scroll-smooth">
+      {/* Navigation Bar */}
+      <nav className="flex flex-wrap justify-between items-center px-6 md:px-10 py-4 bg-white/40 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <h1 className="text-xl md:text-2xl font-bold">Narges Vahdani</h1>
+        <div className="space-x-4 md:space-x-6 text-base md:text-lg mt-2 md:mt-0">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`transition duration-300 ease-in-out ${
+                pathname === link.href
+                  ? 'text-blue-800 font-semibold underline'
+                  : 'hover:text-blue-800'
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </nav>
+
+      {/* Hero Section */}
+      <section id="home" className="flex flex-col items-center justify-center min-h-[90vh] text-center px-4 md:px-6">
+        {/* Profile Picture */}
+        <div className="relative mb-6 animate-fade-in">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/picture1.jpg"
+            alt="Narges Vahdani"
+            width={140}
+            height={140}
+            className="rounded-full border-4 border-white shadow-lg object-cover"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+
+        {/* Text Block */}
+        <div className="backdrop-blur-md bg-white/80 text-black p-6 md:p-10 rounded-xl shadow-xl max-w-3xl animate-slide-up text-justify space-y-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-center">Narges Ghotbizadeh Vahdani</h2>
+          <h3 className="text-lg md:text-xl font-semibold text-center">Data Scientist & AI Specialist</h3>
+
+          <p>
+            I’m Narges Ghotbizadeh Vahdani, a Data Scientist and AI specialist with over five years of professional experience in machine learning, business analytics, and intelligent system development. I hold a Master’s degree in Data Science and have delivered impactful solutions across various industries—from developing scalable AI pipelines and agentic automation platforms at IBM Research and Madani Consulting, to building advanced segmentation models for digital twin systems at Basler & Hofmann.
+          </p>
+
+          <p>
+            My work is grounded in deep technical expertise, including NLP, LLMs, RAG, SQL optimization, cloud computing (Azure, Databricks), and neural network architecture.
+          </p>
+
+          <p>
+            But I’m also more than a technologist. I’m a deeply creative individual who thrives on both collaboration and innovation. In every team I’ve joined, I’ve been recognized for my ability to seamlessly integrate, bring positive, energetic vibes, and push relentlessly toward results. My managers have consistently appreciated my team-first mindset, passion for quality, and tireless commitment to getting the job done—never leaving a challenge unresolved.
+          </p>
+
+          <p>
+            Outside of data, I’m a sporty and artistic soul. I love hiking, volleyball, and biking, and I channel my creativity through interior design, fashion, jewelry making, and furniture renovation. You can explore a glimpse of my artistic journey at{' '}
+            <a
+              href="https://narivahdan.wixsite.com/website"
+              target="_blank"
+              className="text-blue-700 underline"
+            >
+              my personal creative site
+            </a>.
+          </p>
+
+          <div className="text-center pt-4">
+            <a
+              href="/Narges-Vahdani-CV.pdf"
+              download
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full shadow-md transition"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Animations */}
+      <style jsx>{`
+        @keyframes slide-up {
+          from {
+            transform: translateY(20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        .animate-slide-up {
+          animation: slide-up 0.8s ease-out;
+        }
+
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-in;
+        }
+      `}</style>
+    </main>
   );
 }

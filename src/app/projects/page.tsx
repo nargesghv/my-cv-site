@@ -4,16 +4,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Dialog } from '@headlessui/react';
 
-// ✅ Define project type
 type Project = {
   title: string;
   tech: string;
   tag: string;
-  image: string;
   description: string;
   impact: string;
   link: string;
   report: string;
+  image?: string; // <- make this optional
 };
 
 export default function ProjectsPage() {

@@ -22,7 +22,7 @@ export default function ProjectsPage() {
 
   const projects = [
     {
-      title: 'AI-powered Point Cloud Segmentation – Basler & Hofmann',
+      title: 'Point Cloud Segmentation – Basler & Hofmann',
       tech: 'CNNs, PyTorch, 3D ML, Similarity Repair',
       tag: 'Computer Vision',
       image: '/logos/basler.png',
@@ -31,11 +31,11 @@ export default function ProjectsPage() {
       impact:
         'Enhanced B&H’s digital twin platform with precise spatial modeling, giving clients better infrastructure insights.',
       link: '/case-studies/basler-cnn',
-      report: '/downloads/basler-report.pdf',
+      //report: '/downloads/basler-report.pdf',
     },
     {
-      title: 'Agentic SQL Generator – IBM Research',
-      tech: 'LangChain, PostgreSQL, Prompt Engineering, LLMs',
+      title: 'NLtoGeospatial SQL – IBM Research',
+      tech: 'LangChain, PostgreSQL, PostGIS, Prompt Engineering, LLMs, QLoRA finetuning',
       tag: 'Agentic AI',
       image: '/logos/ibm.png',
       description:
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
       impact:
         'Empowered non-technical users to interact with spatial databases. Enabled fast and accurate data access from complex satellite layers.',
       link: '/case-studies/ibm-sql-agent',
-      report: '/downloads/ibm-sql-report.pdf',
+      //report: '/downloads/ibm-sql-report.pdf',
     },
     {
       title: 'AI-Driven Financial Automation Platform – Madani Consulting',
@@ -55,11 +55,11 @@ export default function ProjectsPage() {
       impact:
         'Enabled scalable, intelligent financial pipelines with autonomous agents, reducing manual workload by 70% and increasing workflow efficiency by 80%.',
       link: '/case-studies/madani-automation',
-      report: '/downloads/madani-report.pdf',
+      //report: '/downloads/madani-report.pdf',
     },
     {
-      title: 'LLM-based Syntactic SQL Data Generation – IBM Research',
-      tech: 'IBM Granite 8B, Meta Prompting, SQL Generation, QA Pairs',
+      title: 'LLM-based Syntactic NLtoSQL Data Generation – IBM Research',
+      tech: 'IBM Granite 8B, Meta Prompting, SQL Generation, QA Pairs, OpenAPI, Chain of Thought, Data Managment',
       tag: 'LLMs',
       image: '/logos/ibm.png',
       description:
@@ -67,11 +67,11 @@ export default function ProjectsPage() {
       impact:
         'Delivered a robust data generation pipeline enhancing IBM’s SQL model training with diverse, high-quality samples.',
       link: '/case-studies/ibm-sql-gen',
-      report: '/downloads/sql-gen-report.pdf',
+      //report: '/downloads/sql-gen-report.pdf',
     },
     {
       title: 'Fine-tuning LLMs for Text-to-SQL Tasks – IBM Research',
-      tech: 'Meta Llama 3.1, IBM Granite 8B, QLoRA, Prompt Engineering',
+      tech: 'Meta Llama 3.1, IBM Granite 8B, QLoRA, Prompt Engineering, Syntatic Data Generation',
       tag: 'LLMs',
       image: '/logos/ibm.png',
       description:
@@ -79,11 +79,11 @@ export default function ProjectsPage() {
       impact:
         'Improved model accuracy and SQL output validity for enterprise-grade AI-driven database interfaces.',
       link: '/case-studies/ibm-tuning-llms',
-      report: '/downloads/ibm-tuning-llms.pdf',
+      //report: '/downloads/ibm-tuning-llms.pdf',
     },
     {
       title: 'Real-Time Market Analysis with SAP & Power BI – PMO Group',
-      tech: 'Power BI, SAP S/4HANA, Predictive Dashboards',
+      tech: 'Power BI, SAP S/4HANA, Predictive Dashboards, App development',
       tag: 'Business Intelligence',
       image: '/logos/pmo.png',
       description:
@@ -91,19 +91,19 @@ export default function ProjectsPage() {
       impact:
         'Provided clients with critical market insights and improved internal operational resilience and agility.',
       link: '/case-studies/pmo-bi-tool',
-      report: '/downloads/pmo-bi.pdf',
+      //report: '/downloads/pmo-bi.pdf',
     },
     {
-      title: 'Menopause Prediction with Machine Learning – Anna Startup',
-      tech: 'Gradient Boosting, Regression, Feature Importance',
+      title: 'Menopause Prediction with Predictive Modeling – Anna Startup',
+      tech: 'Gradient Boosting, Regression, Feature Engineering, Predictive Modeling, Data Preparation',
       tag: 'Machine Learning',
-      image: '/logos/anna.png', // optional logo path
+      //image: '/logos/anna.png', // optional logo path
       description:
         'Led predictive modeling on synthetic menopause data using ensemble regressors. Identified top features influencing age of onset.',
       impact:
         'Provided a deployable and explainable model for women’s health applications.',
       link: '/case-studies/menopause', // 👈 This is what matters
-      report: '/downloads/menopause-prediction.pdf' // optional
+      //report: '/downloads/menopause-prediction.pdf' // optional
     },
     {
       title: '3D Point Cloud Segmentation for Digital Twins – Basler & Hofmann',
@@ -115,9 +115,56 @@ export default function ProjectsPage() {
       impact:
         'Enhanced B&H’s digital twin platform with precise infrastructure modeling. Provided clients with detailed, interactive spatial visualizations of construction projects.',
       link: '/case-studies/basler-ml-segmentation',
-      report: '/downloads/basler-ml-report.pdf',
+      //report: '/downloads/basler-ml-report.pdf',
     },
-    
+    {
+      title: 'Conversational SQL Pipeline – Basler & Hofmann',
+      tech: 'LLMs, LangChain, PostgreSQL, Azura, NLP',
+      tag: 'Data Management',
+      image: '/logos/basler.png',
+      description:
+        'Developed a natural language interface for querying HR data using LLMs and PostgreSQL. Automated SQL generation from user questions.',
+      impact:
+        'Enabled fast, accurate HR data access for non-technical users and reduced dependency on IT for database queries.',
+      link: '/case-studies/data-management',
+      //report: '/downloads/basler-db-report.pdf', // optional
+    },
+    {
+      title: 'Academic Chatbot with RAG – iHomeLab',
+      tech: 'LLAMA 3.2, RAG, CRAG, Streamlit, Python, Ollama',
+      tag: 'LLMs',
+      image: '/logos/ihome.png',
+      description:
+        'Built a university-facing Q&A chatbot using retrieval-augmented generation (RAG) techniques. Integrated web scraping, hosted LLMs, and Streamlit for real-time academic support.',
+      impact:
+        'Improved student access to academic FAQs and feedback workflows at HSLU through an interactive, scalable chatbot interface.',
+      link: '/case-studies/ihomelab-rag-chatbot',
+      //report: '/downloads/ihomelab-rag-report.pdf' // optional, you can skip if you don’t have it yet
+    },
+    {
+      title: 'Agentic AI + BIM Automation – PyRevit Integration',
+      tech: 'LLMs, LangChain, PyRevit, Vector DB, GPT-4, RAG',
+      tag: 'Agentic AI',
+      image: '/logos/basler.png',
+      description:
+        'Integrated an LLM-powered agent into PyRevit for automating architectural tasks via intelligent memory retrieval and planning.',
+      impact:
+        'Reduced design time by 65% and enabled real-time, conversational control over Revit workflows for AEC professionals.',
+      link: '/case-studies/agentic-bim',
+      //report: '/downloads/agentic-bim.pdf'
+    },
+    {
+      title: 'Agent Bee Integration – IBM Geospatial Studio',
+      tech: 'Agentic AI, LLMs, Geospatial Modeling, Prompt Engineering',
+      tag: 'Agentic AI',
+      image: '/logos/ibm.png',
+      description:
+        'Integrated Agent Bee into IBM’s Geospatial Studio with tools for user feedback, prompt refinement, and intelligent model/dataset tuning.',
+      impact:
+        'Enabled interactive climate modeling workflows, reducing human effort in Earth system simulations while enhancing model accuracy and transparency.',
+      link: '/case-studies/agent-bee-ibm',
+      //report: '/downloads/agent-bee-case.pdf',
+    }, 
   ];
 
   const uniqueTags = ['All', ...new Set(projects.map((proj) => proj.tag))];

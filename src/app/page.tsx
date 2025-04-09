@@ -12,6 +12,7 @@ export default function Home() {
     { href: '/cv', label: 'CV' },
     { href: '/projects', label: 'Projects' },
     { href: '/contact', label: 'Contact' },
+    { href: '/references', label: 'references' },
   ];
 
   return (
@@ -51,21 +52,15 @@ export default function Home() {
 
         {/* Text Block */}
         <div className="backdrop-blur-md bg-white/80 text-black p-6 md:p-10 rounded-xl shadow-xl max-w-3xl animate-slide-up text-justify space-y-4">
-          <h2 className="text-2xl md:text-4xl font-bold text-center">Narges Ghotbizadeh Vahdani</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-center">Narges Vahdani</h2>
           <h3 className="text-lg md:text-xl font-semibold text-center">Data Scientist & AI Specialist</h3>
 
-          <p>
-            I’m Narges Ghotbizadeh Vahdani, a Data Scientist and AI specialist with over five years of professional experience in machine learning, business analytics, and intelligent system development. I hold a Master’s degree in Data Science and have delivered impactful solutions across various industries—from developing scalable AI pipelines and agentic automation platforms at IBM Research and Madani Consulting, to building advanced segmentation models for digital twin systems at Basler & Hofmann.
-          </p>
+          <p> I’m Narges — a passionate and versatile Data Scientist and AI Engineer with over five years of hands-on experience building intelligent systems, machine learning pipelines, and business-driven AI solutions. I hold a Master’s degree in Data Science and have delivered transformative projects across diverse industries. My work spans from developing **agentic AI platforms and automation tools at IBM Research** to engineering **digital twin segmentation models** at Basler & Hofmann and building **scalable analytics architectures** at Madani Consulting. </p>
 
-          <p>
-            My work is grounded in deep technical expertise, including NLP, LLMs, RAG, SQL optimization, cloud computing (Azure, Databricks), and neural network architecture.
-          </p>
+          <p> My technical toolbox is deep and modern: I specialize in **large language models (LLMs)**, **retrieval-augmented generation (RAG)**, **cloud-native pipelines (Azure, Databricks)**, **SQL performance tuning**, and **neural network design**. I have a proven track record of shipping models into production, optimizing end-to-end data workflows, and bringing explainable AI into real-world applications. </p>
 
-          <p>
-            But I’m also more than a technologist. I’m a deeply creative individual who thrives on both collaboration and innovation. In every team I’ve joined, I’ve been recognized for my ability to seamlessly integrate, bring positive, energetic vibes, and push relentlessly toward results. My managers have consistently appreciated my team-first mindset, passion for quality, and tireless commitment to getting the job done—never leaving a challenge unresolved.
-          </p>
-
+          <p> But what truly sets me apart is how I show up: I’m not just a builder — I’m a **culture catalyst**. My teams know me for my positive energy, curiosity, and relentless commitment to meaningful outcomes. I bring warmth to collaboration, clarity to ambiguity, and ownership to every challenge I take on. I care deeply about purpose, people, and performance — and I thrive in environments where I can grow while helping others grow. Whether it's aligning AI innovation with business impact or elevating team dynamics, I lead with intention and always strive to make the organization better than I found it. </p>
+          <p> I’m excited to contribute to a mission-driven company where curiosity, impact, and excellence are celebrated — and where my skills in **AI engineering, strategic thinking, and people-first problem solving** can help shape the future. </p>
           <p>
             Outside of data, I’m a sporty and artistic soul. I love hiking, volleyball, and biking, and I channel my creativity through interior design, fashion, jewelry making, and furniture renovation. You can explore a glimpse of my artistic journey at{' '}
             <a

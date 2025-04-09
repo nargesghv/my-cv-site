@@ -31,7 +31,7 @@ export default function ProjectsPage() {
       impact:
         'Enhanced B&H’s digital twin platform with precise spatial modeling, giving clients better infrastructure insights.',
       link: '/case-studies/basler-cnn',
-      //report: '/downloads/basler-report.pdf',
+      report: '/downloads/basler-report.pdf',
     },
     {
       title: 'NLtoGeospatial SQL – IBM Research',
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
       impact:
         'Empowered non-technical users to interact with spatial databases. Enabled fast and accurate data access from complex satellite layers.',
       link: '/case-studies/ibm-sql-agent',
-      //report: '/downloads/ibm-sql-report.pdf',
+      report: '/downloads/ibm-sql-report.pdf',
     },
     {
       title: 'AI-Driven Financial Automation Platform – Madani Consulting',
@@ -55,7 +55,7 @@ export default function ProjectsPage() {
       impact:
         'Enabled scalable, intelligent financial pipelines with autonomous agents, reducing manual workload by 70% and increasing workflow efficiency by 80%.',
       link: '/case-studies/madani-automation',
-      //report: '/downloads/madani-report.pdf',
+      report: '/downloads/madani-report.pdf',
     },
     {
       title: 'LLM-based Syntactic NLtoSQL Data Generation – IBM Research',
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
       impact:
         'Delivered a robust data generation pipeline enhancing IBM’s SQL model training with diverse, high-quality samples.',
       link: '/case-studies/ibm-sql-gen',
-      //report: '/downloads/sql-gen-report.pdf',
+      report: '/downloads/sql-gen-report.pdf',
     },
     {
       title: 'Fine-tuning LLMs for Text-to-SQL Tasks – IBM Research',
@@ -79,7 +79,7 @@ export default function ProjectsPage() {
       impact:
         'Improved model accuracy and SQL output validity for enterprise-grade AI-driven database interfaces.',
       link: '/case-studies/ibm-tuning-llms',
-      //report: '/downloads/ibm-tuning-llms.pdf',
+      report: '/downloads/ibm-tuning-llms.pdf',
     },
     {
       title: 'Real-Time Market Analysis with SAP & Power BI – PMO Group',
@@ -91,7 +91,7 @@ export default function ProjectsPage() {
       impact:
         'Provided clients with critical market insights and improved internal operational resilience and agility.',
       link: '/case-studies/pmo-bi-tool',
-      //report: '/downloads/pmo-bi.pdf',
+      report: '/downloads/pmo-bi.pdf',
     },
     {
       title: 'Menopause Prediction with Predictive Modeling – Anna Startup',
@@ -103,7 +103,7 @@ export default function ProjectsPage() {
       impact:
         'Provided a deployable and explainable model for women’s health applications.',
       link: '/case-studies/menopause', // 👈 This is what matters
-      //report: '/downloads/menopause-prediction.pdf' // optional
+      report: '/downloads/menopause-prediction.pdf' // optional
     },
     {
       title: '3D Point Cloud Segmentation for Digital Twins – Basler & Hofmann',
@@ -115,7 +115,7 @@ export default function ProjectsPage() {
       impact:
         'Enhanced B&H’s digital twin platform with precise infrastructure modeling. Provided clients with detailed, interactive spatial visualizations of construction projects.',
       link: '/case-studies/basler-ml-segmentation',
-      //report: '/downloads/basler-ml-report.pdf',
+      report: '/downloads/basler-ml-report.pdf',
     },
     {
       title: 'Conversational SQL Pipeline – Basler & Hofmann',
@@ -127,7 +127,7 @@ export default function ProjectsPage() {
       impact:
         'Enabled fast, accurate HR data access for non-technical users and reduced dependency on IT for database queries.',
       link: '/case-studies/data-management',
-      //report: '/downloads/basler-db-report.pdf', // optional
+      report: '/downloads/basler-db-report.pdf', // optional
     },
     {
       title: 'Academic Chatbot with RAG – iHomeLab',
@@ -139,7 +139,7 @@ export default function ProjectsPage() {
       impact:
         'Improved student access to academic FAQs and feedback workflows at HSLU through an interactive, scalable chatbot interface.',
       link: '/case-studies/ihomelab-rag-chatbot',
-      //report: '/downloads/ihomelab-rag-report.pdf' // optional, you can skip if you don’t have it yet
+      report: '/downloads/ihomelab-rag-report.pdf' // optional, you can skip if you don’t have it yet
     },
     {
       title: 'Agentic AI + BIM Automation – PyRevit Integration',
@@ -151,7 +151,7 @@ export default function ProjectsPage() {
       impact:
         'Reduced design time by 65% and enabled real-time, conversational control over Revit workflows for AEC professionals.',
       link: '/case-studies/agentic-bim',
-      //report: '/downloads/agentic-bim.pdf'
+      report: '/downloads/agentic-bim.pdf'
     },
     {
       title: 'Agent Bee Integration – IBM Geospatial Studio',
@@ -163,7 +163,7 @@ export default function ProjectsPage() {
       impact:
         'Enabled interactive climate modeling workflows, reducing human effort in Earth system simulations while enhancing model accuracy and transparency.',
       link: '/case-studies/agent-bee-ibm',
-      //report: '/downloads/agent-bee-case.pdf',
+      report: '/downloads/agent-bee-case.pdf',
     }, 
   ];
 

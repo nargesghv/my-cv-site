@@ -92,7 +92,32 @@ export default function ProjectsPage() {
         'Provided clients with critical market insights and improved internal operational resilience and agility.',
       link: '/case-studies/pmo-bi-tool',
       report: '/downloads/pmo-bi.pdf',
-    }
+    },
+    {
+      title: 'Menopause Prediction using Machine Learning – Anna Startup',
+      tech: 'Gradient Boosting, Feature Engineering, Regression Models, Python',
+      tag: 'Machine Learning',
+      image: '/logos/anna.png', // Make sure this image is placed inside /public/logos/
+      description:
+        'Led a health data initiative to predict menopause onset age using synthetically generated clinical datasets. Evaluated multiple regression models including Gradient Boosting, which showed the highest accuracy and interpretability.',
+      impact:
+        'Built a model explaining how age, mother’s menopause, and LH levels influence menopause prediction. Enabled future deployment for real-time prediction in awareness campaigns.',
+      link: '/case-studies/menopause-ml',
+      report: '/downloads/menopause-ml-report.pdf',
+    },
+    {
+      title: '3D Point Cloud Segmentation for Digital Twins – Basler & Hofmann',
+      tech: 'Voxel-based CNN, IoU/F1, PyTorch, Similarity Repair, 3D ML',
+      tag: 'Machine Learning',
+      image: '/logos/basler.png',
+      description:
+        'Applied machine learning to segment point cloud infrastructure data. Developed and fine-tuned a voxel CNN with evaluation accuracy of 78%. Addressed missing data using similarity-based reconstruction methods.',
+      impact:
+        'Enhanced B&H’s digital twin platform with precise infrastructure modeling. Provided clients with detailed, interactive spatial visualizations of construction projects.',
+      link: '/case-studies/basler-ml-segmentation',
+      report: '/downloads/basler-ml-report.pdf',
+    },
+    
   ];
 
   const uniqueTags = ['All', ...new Set(projects.map((proj) => proj.tag))];

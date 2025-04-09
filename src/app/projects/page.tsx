@@ -94,16 +94,16 @@ export default function ProjectsPage() {
       report: '/downloads/pmo-bi.pdf',
     },
     {
-      title: 'Menopause Prediction using Machine Learning – Anna Startup',
-      tech: 'Gradient Boosting, Feature Engineering, Regression Models, Python',
+      title: 'Menopause Prediction with Machine Learning – Anna Startup',
+      tech: 'Gradient Boosting, Regression, Feature Importance',
       tag: 'Machine Learning',
-      image: '/logos/anna.png', // Make sure this image is placed inside /public/logos/
+      image: '/logos/anna.png', // optional logo path
       description:
-        'Led a health data initiative to predict menopause onset age using synthetically generated clinical datasets. Evaluated multiple regression models including Gradient Boosting, which showed the highest accuracy and interpretability.',
+        'Led predictive modeling on synthetic menopause data using ensemble regressors. Identified top features influencing age of onset.',
       impact:
-        'Built a model explaining how age, mother’s menopause, and LH levels influence menopause prediction. Enabled future deployment for real-time prediction in awareness campaigns.',
-      link: '/case-studies/menopause-ml',
-      report: '/downloads/menopause-ml-report.pdf',
+        'Provided a deployable and explainable model for women’s health applications.',
+      link: '/case-studies/menopause', // 👈 This is what matters
+      report: '/downloads/menopause-prediction.pdf' // optional
     },
     {
       title: '3D Point Cloud Segmentation for Digital Twins – Basler & Hofmann',

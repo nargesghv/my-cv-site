@@ -4,9 +4,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Dialog } from '@headlessui/react';
 
+// ✅ Define project type
+type Project = {
+  title: string;
+  tech: string;
+  tag: string;
+  image: string;
+  description: string;
+  impact: string;
+  link: string;
+  report: string;
+};
+
 export default function ProjectsPage() {
   const [selectedTag, setSelectedTag] = useState('All');
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null); // ✅ Apply type here
 
   const projects = [
     {

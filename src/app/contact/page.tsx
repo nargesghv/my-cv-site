@@ -11,9 +11,8 @@ export default function ContactPage() {
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitted(true);
     // Optional: Add email sending API integration here
@@ -59,7 +58,7 @@ export default function ContactPage() {
               <textarea
                 name="message"
                 id="message"
-                rows="5"
+                rows={5}
                 value={formData.message}
                 onChange={handleChange}
                 required

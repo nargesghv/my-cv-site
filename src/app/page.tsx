@@ -12,7 +12,7 @@ export default function Home() {
     { href: '/cv', label: 'CV' },
     { href: '/projects', label: 'Projects' },
     { href: '/contact', label: 'Contact' },
-    { href: '/references', label: 'references' },
+  
   ];
 
   return (

@@ -164,6 +164,39 @@ export default function ProjectsPage() {
       link: '/case-studies/agent-bee-ibm',
       report: '/downloads/agent-bee-case.pdf',
     }, 
+    {
+      title: 'Real-Time Business Insights Platform – Azure Cognitive Search + LLMOps',
+      tech: 'Python, Kafka, Azure Cognitive Search, Ollama LLM, FastAPI, LLMOps',
+      tag: 'Data Management',
+      description:
+        'Built a real-time stock market intelligence system using Kafka streaming, Azure Search indexing, RAG pipelines with Ollama LLMs, and FastAPI REST APIs. Integrated LLMOps monitoring for latency and prompt optimization.',
+      impact:
+        'Enabled real-time retrieval and predictive insights into stock market events with scalable LLM pipelines and production-grade APIs.',
+      link: 'https://github.com/nargesghv/Real-Time-Business-Intelligence-Platform-with-Azure-AI-Search-LLM-LLMOps-Kafka',
+      report: '', // Optional: Add if you want a PDF download
+    },
+    {
+      title: 'Real Estate Forecasting Platform – ML + Azure Cloud + BI',
+      tech: 'Python, XGBoost, FAISS, Azure SQL, Power BI, FastAPI',
+      tag: 'Machine Learning',
+      description:
+        'Designed a real-time forecasting solution for Toronto housing markets by combining XGBoost modeling, FAISS-based property search, cloud APIs with FastAPI, and Power BI dashboards connected to Azure SQL databases.',
+      impact:
+        'Delivered end-to-end AI forecasting and business intelligence system for real estate investment insights using cloud-native deployment.',
+      link: 'https://github.com/nargesghv/RealEstate-Forecasting-Platform',
+      report: '', // Optional: Add if you want a PDF download
+    },
+    {
+      title: 'Real-Time Image Classification Pipeline – TensorFlow + Kafka',
+      tech: 'TensorFlow, Kafka, FastAPI, Docker, OpenCV, Hugging Face',
+      tag: 'Computer Vision',
+      description:
+        'Built a modular real-time CNN classification system with live webcam ingestion via Kafka, real-time FastAPI model inference, and containerized deployment with Docker. Achieved 92% validation accuracy on Food-101 dataset.',
+      impact:
+        'Enabled live streaming image classification at scale, combining deep learning, real-time messaging, and fast deployment workflows.',
+      link: 'https://github.com/nargesghv/RealTime-CNN-Classification',
+      report: '', // Optional: Add if you want a PDF download
+    },    
   ];
 
   const uniqueTags = ['All', ...new Set(projects.map((proj) => proj.tag))];

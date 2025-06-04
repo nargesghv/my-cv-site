@@ -17,9 +17,9 @@ type Project = {
 
 export default function ProjectsPage() {
   const [selectedTag, setSelectedTag] = useState('All');
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null); // ✅ Apply type here
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const projects = [
+  const projects: Project[] = [
     {
       title: 'Point Cloud Segmentation – Basler & Hofmann',
       tech: 'CNNs, PyTorch, 3D ML, Similarity Repair',
@@ -34,11 +34,11 @@ export default function ProjectsPage() {
     },
     {
       title: 'NLtoGeospatial SQL – IBM Research',
-      tech: 'LangChain, PostgreSQL, PostGIS, Prompt Engineering, LLMs, QLoRA finetuning',
+      tech: 'LangChain, PostgreSQL, PostGIS, Prompt Engineering, LLMs, QLoRA Finetuning',
       tag: 'Agentic AI',
       image: '/logos/ibm.png',
       description:
-        'Built an AI pipeline to convert natural language to SQL using intent detection, keyword extraction, and LLM-based query generation. Benchmarked on BIRD and custom evaluation set.',
+        'Built an AI pipeline to convert natural language to SQL using intent detection, keyword extraction, and LLM-based query generation. Benchmarked on BIRD and a custom evaluation set.',
       impact:
         'Empowered non-technical users to interact with spatial databases. Enabled fast and accurate data access from complex satellite layers.',
       link: '/case-studies/ibm-sql-agent',
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
     },
     {
       title: 'LLM-based Syntactic NLtoSQL Data Generation – IBM Research',
-      tech: 'IBM Granite 8B, Meta Prompting, SQL Generation, QA Pairs, OpenAPI, Chain of Thought, Data Managment',
+      tech: 'IBM Granite 8B, Meta Prompting, SQL Generation, QA Pairs, OpenAPI, Chain-of-Thought, Data Management',
       tag: 'LLMs',
       image: '/logos/ibm.png',
       description:
@@ -70,7 +70,7 @@ export default function ProjectsPage() {
     },
     {
       title: 'Fine-tuning LLMs for Text-to-SQL Tasks – IBM Research',
-      tech: 'Meta Llama 3.1, IBM Granite 8B, QLoRA, Prompt Engineering, Syntatic Data Generation',
+      tech: 'Meta Llama 3.1, IBM Granite 8B, QLoRA, Prompt Engineering, Syntactic Data Generation',
       tag: 'LLMs',
       image: '/logos/ibm.png',
       description:
@@ -82,7 +82,7 @@ export default function ProjectsPage() {
     },
     {
       title: 'Real-Time Market Analysis with SAP & Power BI – PMO Group',
-      tech: 'Power BI, SAP S/4HANA, Predictive Dashboards, App development',
+      tech: 'Power BI, SAP S/4HANA, Predictive Dashboards, App Development',
       tag: 'Business Intelligence',
       image: '/logos/pmo.png',
       description:
@@ -96,29 +96,16 @@ export default function ProjectsPage() {
       title: 'Menopause Prediction with Predictive Modeling – Anna Startup',
       tech: 'Gradient Boosting, Regression, Feature Engineering, Predictive Modeling, Data Preparation',
       tag: 'Machine Learning',
-      //image: '/logos/anna.png', // optional logo path
       description:
         'Led predictive modeling on synthetic menopause data using ensemble regressors. Identified top features influencing age of onset.',
       impact:
         'Provided a deployable and explainable model for women’s health applications.',
-      link: '/case-studies/menopause', // 👈 This is what matters
-      report: '/downloads/menopause-prediction.pdf' // optional
-    },
-    {
-      title: '3D Point Cloud Segmentation for Digital Twins – Basler & Hofmann',
-      tech: 'Voxel-based CNN, IoU/F1, PyTorch, Similarity Repair, 3D ML',
-      tag: 'Machine Learning',
-      image: '/logos/basler.png',
-      description:
-        'Applied machine learning to segment point cloud infrastructure data. Developed and fine-tuned a voxel CNN with evaluation accuracy of 78%. Addressed missing data using similarity-based reconstruction methods.',
-      impact:
-        'Enhanced B&H’s digital twin platform with precise infrastructure modeling. Provided clients with detailed, interactive spatial visualizations of construction projects.',
-      link: '/case-studies/basler-ml-segmentation',
-      report: '/downloads/basler-ml-report.pdf',
+      link: '/case-studies/menopause',
+      report: '/downloads/menopause-prediction.pdf',
     },
     {
       title: 'Conversational SQL Pipeline – Basler & Hofmann',
-      tech: 'LLMs, LangChain, PostgreSQL, Azura, NLP',
+      tech: 'LLMs, LangChain, PostgreSQL, Azure, NLP',
       tag: 'Data Management',
       image: '/logos/basler.png',
       description:
@@ -126,7 +113,7 @@ export default function ProjectsPage() {
       impact:
         'Enabled fast, accurate HR data access for non-technical users and reduced dependency on IT for database queries.',
       link: '/case-studies/data-management',
-      report: '/downloads/basler-db-report.pdf', // optional
+      report: '/downloads/basler-db-report.pdf',
     },
     {
       title: 'Academic Chatbot with RAG – iHomeLab',
@@ -138,7 +125,7 @@ export default function ProjectsPage() {
       impact:
         'Improved student access to academic FAQs and feedback workflows at HSLU through an interactive, scalable chatbot interface.',
       link: '/case-studies/ihomelab-rag-chatbot',
-      report: '/downloads/ihomelab-rag-report.pdf' // optional, you can skip if you don’t have it yet
+      report: '/downloads/ihomelab-rag-report.pdf',
     },
     {
       title: 'Agentic AI + BIM Automation – PyRevit Integration',
@@ -150,7 +137,7 @@ export default function ProjectsPage() {
       impact:
         'Reduced design time by 65% and enabled real-time, conversational control over Revit workflows for AEC professionals.',
       link: '/case-studies/agentic-bim',
-      report: '/downloads/agentic-bim.pdf'
+      report: '/downloads/agentic-bim.pdf',
     },
     {
       title: 'Agent Bee Integration – IBM Geospatial Studio',
@@ -163,7 +150,7 @@ export default function ProjectsPage() {
         'Enabled interactive climate modeling workflows, reducing human effort in Earth system simulations while enhancing model accuracy and transparency.',
       link: '/case-studies/agent-bee-ibm',
       report: '/downloads/agent-bee-case.pdf',
-    }, 
+    },
     {
       title: 'Real-Time Business Insights Platform – Azure Cognitive Search + LLMOps',
       tech: 'Python, Kafka, Azure Cognitive Search, Ollama LLM, FastAPI, LLMOps',
@@ -173,7 +160,7 @@ export default function ProjectsPage() {
       impact:
         'Enabled real-time retrieval and predictive insights into stock market events with scalable LLM pipelines and production-grade APIs.',
       link: 'https://github.com/nargesghv/Real-Time-Business-Intelligence-Platform-with-Azure-AI-Search-LLM-LLMOps-Kafka',
-      report: '', // Optional: Add if you want a PDF download
+      report: '',
     },
     {
       title: 'Real Estate Forecasting Platform – ML + Azure Cloud + BI',
@@ -184,7 +171,7 @@ export default function ProjectsPage() {
       impact:
         'Delivered end-to-end AI forecasting and business intelligence system for real estate investment insights using cloud-native deployment.',
       link: 'https://github.com/nargesghv/RealEstate-Forecasting-Platform',
-      report: '', // Optional: Add if you want a PDF download
+      report: '',
     },
     {
       title: 'Real-Time Image Classification Pipeline – TensorFlow + Kafka',
@@ -195,8 +182,97 @@ export default function ProjectsPage() {
       impact:
         'Enabled live streaming image classification at scale, combining deep learning, real-time messaging, and fast deployment workflows.',
       link: 'https://github.com/nargesghv/RealTime-CNN-Classification',
-      report: '', // Optional: Add if you want a PDF download
-    },    
+      report: '',
+    },
+    // —————————— NEW PROJECTS BELOW ——————————
+    {
+      title: 'Realtime Multi-Agent Conversational System – LangGraph & MCP',
+      tech: 'LangGraph, MCP, DALL·E, Matplotlib, Python REPL, Server-Sent Events',
+      tag: 'Agentic AI',
+      description:
+        'Developed a real-time, tool-augmented conversational AI agent integrating LangGraph with the Multi-Tool Calling Protocol (MCP). Enabled the LLM to reason, plan, and call external tools—DALL·E for image generation, Matplotlib for visualization, and a Python REPL for dynamic code execution—via a structured graph-based flow.',
+      impact:
+        'Showcased a fully modular architecture with a local MCP tool server, demonstrating seamless AI integration with real-world utilities and extensibility for future tool additions.',
+      link: '',
+      report: '',
+    },
+    {
+      title: 'Accent Classification from Voice',
+      tech: 'Wav2Vec2, Common Voice, PyTorch, Hugging Face, Torchaudio, Librosa, Scikit-learn, Logistic Regression',
+      tag: 'Machine Learning',
+      description:
+        'Built an audio-based accent classification system using pretrained Wav2Vec2 embeddings and logistic regression. Automated dataset preparation with Mozilla Common Voice, extracted audio features, and trained a classifier to predict regional accents (American, British, Indian). Packaged as a command-line tool with real-time inference and model persistence.',
+      impact:
+        'Delivered a robust, real-time accent classifier, enabling immediate inference and demonstrating model performance portability in real-world audio applications.',
+      link: '',
+      report: '',
+    },
+    {
+      title: 'Real-Time Multilingual Audio Deepfake Detection System',
+      tech: 'PyTorch, Hugging Face Transformers (wav2vec2), Torchaudio, Apache Kafka, Grafana, InfluxDB, Docker, Kubernetes',
+      tag: 'Machine Learning',
+      description:
+        'Developed a real-time multilingual audio deepfake detection system using PyTorch and Hugging Face’s wav2vec2, integrated with Apache Kafka for streaming and Grafana + InfluxDB for monitoring. Built scalable microservices with Docker and Kubernetes, including Kafka producers/consumers and a model inference pipeline.',
+      impact:
+        'Enabled robust, low-latency detection of deepfake audio across multiple languages, with automated alerts and scalable microservice orchestration.',
+      link: '',
+      report: '',
+    },
+    {
+      title: 'RAG-Enabled Multi-Agent Chat Application (PydanticAI + FastAPI)',
+      tech: 'PydanticAI, FastAPI, PostgreSQL, pgvector, OpenAI GPT, TypeScript Frontend',
+      tag: 'Agentic AI',
+      description:
+        'Designed and implemented a RAG-based chat application using PydanticAI and FastAPI. Developed a modular multi-agent architecture that dynamically retrieved and summarized relevant documents via PostgreSQL/pgvector embedding search. Integrated OpenAI GPT models for context-aware Q&A, with live streaming responses and a TypeScript-based web frontend.',
+      impact:
+        'Delivered a scalable, real-time agentic chat interface, improving document retrieval accuracy and user engagement in knowledge-intensive scenarios.',
+      link: '',
+      report: '',
+    },
+    {
+      title: 'GraphRAG Legal Contract Intelligence',
+      tech: 'LLM, Neo4j, FastAPI, LangChain, Pydantic, Cypher',
+      tag: 'Agentic AI',
+      description:
+        'Developed an agentic RAG system combining LLM-based structured data extraction with a Neo4j knowledge graph for legal contract analysis. Built LangChain-powered tools and FastAPI endpoints to extract, store, and query structured legal insights from raw documents. Enabled advanced semantic search, clause tracking, and aggregation queries using Pydantic schemas and Cypher.',
+      impact:
+        'Streamlined contract review workflows by enabling semantic search and clause-level insights, reducing manual effort and improving legal decision-making.',
+      link: '',
+      report: '',
+    },
+    {
+      title: 'DriftAlert: Real-Time AI-Powered Schema Monitoring System',
+      tech: 'Python, PostgreSQL, Kafka, OpenAI GPT-4o, LangChain Agents, Vector Store, Pydantic, SQL, JSON, Guardrails',
+      tag: 'Agentic AI',
+      description:
+        'Built an advanced agent-based monitoring system to detect and report database schema drift in real time. Leveraged GPT-4o-mini and OpenAI Agents SDK to orchestrate multi-agent reasoning, tool-calling utilities, and semantic vector search. Employed Kafka for streaming schema snapshots and Pydantic for structured output.',
+      impact:
+        'Automated lifecycle tracking of schema changes, reduced manual QA and release delays by surfacing breaking changes instantly, and enabled explainable, searchable AI-generated audit trails.',
+      link: '',
+      report: '',
+    },
+    {
+      title: 'LangGraph AI Document Classifier',
+      tech: 'Python, FastAPI, React, Tailwind, OpenAI GPT-4, LangChain, SQLite, Streamlit',
+      tag: 'LLMs',
+      description:
+        'Developed a full-stack AI-powered document classification system using a LangGraph agent (GPT-4) to categorize uploaded PDF and DOCX files into business-related groups (tax, payroll, client communication). Built a React + Tailwind frontend with real-time file preview, a FastAPI backend for model orchestration, and a SQLite database for classification history. Integrated Streamlit as an alternate analytics dashboard.',
+      impact:
+        'Enabled rapid, accurate document categorization and provided stakeholders with intuitive dashboards for tracking classification history and performance.',
+      link: '',
+      report: '',
+    },
+    {
+      title: 'Real-Time AI Chatbot Project',
+      tech: 'Python, Kafka, MongoDB, FAISS, GPT-4, FastAPI',
+      tag: 'RAG',
+      description:
+        'Designed and implemented a real-time question-answering chatbot using Kafka-based ETL pipelines, MongoDB for document storage, FAISS for semantic retrieval, and OpenAI’s GPT-4 for natural language responses. Built RESTful APIs with FastAPI, integrated vector embeddings with Sentence Transformers, and optimized for enterprise Q&A workflows.',
+      impact:
+        'Delivered a high-throughput, low-latency chatbot infrastructure supporting real-time enterprise Q&A, improving response accuracy and system scalability.',
+      link: '',
+      report: '',
+    },
   ];
 
   const uniqueTags = ['All', ...new Set(projects.map((proj) => proj.tag))];

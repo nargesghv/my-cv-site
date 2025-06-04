@@ -24,7 +24,14 @@ export default function CVPage() {
     <main className="min-h-screen bg-gradient-to-br from-[#f9fafb] to-[#e5e7eb] dark:from-[#111827] dark:to-[#1f2937] text-black dark:text-white px-6 md:px-20 py-10 transition-colors duration-700">
       {/* Navigation */}
       <nav className="flex justify-between items-center px-6 md:px-10 py-4 bg-white/60 dark:bg-gray-800/80 backdrop-blur-lg shadow-md sticky top-0 z-50 mb-8 rounded-xl">
-        <h1 className="text-xl md:text-2xl font-bold text-blue-900 dark:text-white">Narges Vahdani</h1>
+        <div>
+          <h1 className="text-xl md:text-2xl font-bold text-blue-900 dark:text-white">
+            Narges Vahdani
+          </h1>
+          <h2 className="text-sm md:text-base text-gray-600 dark:text-gray-300">
+            Data Scientist &amp; AI Engineer
+          </h2>
+        </div>
         <div className="flex gap-4 items-center">
           {navLinks.map((link) => (
             <Link
@@ -59,10 +66,18 @@ export default function CVPage() {
               height={130}
               className="rounded-full border-4 border-blue-200 shadow-md"
             />
-            <h1 className="text-4xl font-bold text-blue-900 dark:text-white">Narges Vahdani</h1>
+            <h1 className="text-4xl font-bold text-blue-900 dark:text-white">
+              Narges Vahdani
+            </h1>
+            <h2 className="text-lg font-medium text-gray-700 dark:text-gray-300">
+              Data Scientist &amp; AI Engineer
+            </h2>
             <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
               📍 8952 Zurich | ✉️{' '}
-              <a href="mailto:nargesvahdani@gmail.com" className="text-blue-600 hover:underline">
+              <a
+                href="mailto:nargesvahdani@gmail.com"
+                className="text-blue-600 hover:underline"
+              >
                 nargesvahdani@gmail.com
               </a>{' '}
               | 📞 +41 76 270 0440
@@ -92,88 +107,189 @@ export default function CVPage() {
           </div>
         </header>
 
+        {/* Summary */}
         <section>
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            Professional Summary
+            Summary
           </h2>
           <p className="text-justify text-gray-800 dark:text-gray-300 leading-relaxed">
-            I am a Data Scientist and AI specialist with over five years of professional experience in machine learning,
-            intelligent automation, and real-time data solutions. With a strong academic foundation in data science and
-            electrical engineering, I’ve developed advanced pipelines, deployed LLMs, and led interdisciplinary teams.
-            I am deeply committed to leveraging AI for business transformation through rigorous modeling, intuitive system design,
-            and scalable infrastructure.
+            Creative and driven professional blending technology, design, and applied science to tackle
+            real-world challenges. Skilled at hands-on development and strategic problem-solving, with
+            a practical, can-do attitude and a collaborative spirit. Energetic and adaptable, I thrive on
+            learning new skills, overcoming obstacles, and contributing to impactful projects.
           </p>
         </section>
 
+        {/* Work Experiences */}
         <section>
-          <h2 className="text-2xl font-semibold border-b pb-1 mb-4 text-blue-800 dark:text-blue-300">Experience</h2>
-          <div className="space-y-3">
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            Work Experience
+          </h2>
+          <div className="space-y-8">
+            {/* IBM Research */}
             <div>
-              <h3 className="font-bold">IBM Research (2024–2025)</h3>
-              <ul className="list-disc list-inside">
-                <li>Developed a scalable LLM-powered SQL generation pipeline with PostgreSQL + LangChain.</li>
-                <li>Fine-tuned IBM Granite 8B with QLoRA for spatial query optimization (AgentBee, NASA project).</li>
+              <h3 className="text-xl font-bold">Master Thesis &amp; Intern</h3>
+              <p className="italic text-gray-600 dark:text-gray-400">
+                Multidimensional Database – IBM Research, Zurich | Sep 2024 – Feb 2025
+              </p>
+              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300">
+                <li>
+                  Collaborated on the Agent Bee team for IBM’s Geospatial Studio, adding agentic tools that enable automatic
+                  prompt refinement, on-the-fly model tuning, and semantic dataset selection via vector-based retrieval.
+                </li>
+                <li>
+                  Partnered with the Zurich NL-to-SQL team to fine-tune models on client data; when data quality was insufficient,
+                  designed an end-to-end pipeline using IBM Granite 3 and advanced prompt engineering to generate high-quality
+                  synthetic GeospatialSQL training data—enabling LLMs to be fine-tuned on domain-specific spatial tasks with
+                  minimal real data.
+                </li>
+                <li>
+                  Created a user-friendly, multimodal natural language–to–SQL interface for IBM’s multidimensional geospatial
+                  database by fine-tuning LLMs (IBM Granite, LLaMA 3.2) with SFT, QLoRA, and RLHF—ensuring accurate, interpretable
+                  geospatial query results through targeted benchmark evaluations.
+                </li>
               </ul>
             </div>
+
+            {/* PMO Group */}
             <div>
-              <h3 className="font-bold">Basler & Hofmann (2023–2024)</h3>
-              <ul className="list-disc list-inside">
-                <li>Segmented point cloud data using voxel-based CNNs with similarity-based data repair.</li>
-                <li>Integrated PyRevit and AI agents to automate Revit workflows and enable chat-based interactions.</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold">iHomeLab (2023–2025)</h3>
-              <ul className="list-disc list-inside">
-                <li>Developed RAG-based question answering and real-time IoT analytics for smart elderly care.</li>
-                <li>Improved engagement and information accessibility using web scraping + LangGraph agents.</li>
+              <h3 className="text-xl font-bold">Director, Data Engineering</h3>
+              <p className="italic text-gray-600 dark:text-gray-400">
+                PMO Group (Business Analysis) – Toronto | Sep 2018 – Jan 2021
+              </p>
+              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300">
+                <li>
+                  Built a predictive real estate analytics platform integrating Power BI and SAP, delivering market insights to executives.
+                </li>
+                <li>
+                  Deployed a real-time app using fine-tuned regression models to forecast housing prices across Toronto neighborhoods.
+                </li>
               </ul>
             </div>
           </div>
         </section>
 
+        {/* Projects */}
         <section>
-          <h2 className="text-2xl font-semibold border-b pb-1 mb-4 text-blue-800 dark:text-blue-300">Projects</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-800 dark:text-gray-300">
-            <li><strong>Financial AI Assistant:</strong> Built real-time Kafka + LangGraph pipeline to automate invoice processing & payment logic with OpenAI Assistants.</li>
-            <li><strong>Signal Analytics:</strong> AI-driven clustering of IoT sensor data to enhance smart home reliability for elderly safety.</li>
-            <li><strong>Q&A Chatbot (RAG):</strong> Multilingual Streamlit chatbot with LLAMA 3.2 + RAG + OpenAPI for HSLU academic support.</li>
-            <li><strong>ETL Pipelines:</strong> Spark-based, cloud-integrated pipelines for deduplication, cleansing, and streaming large-scale engineering data.</li>
-            <li><strong>Agricultural NLP:</strong> LangChain-based RAG chatbot hosted on AWS Lambda Edge for rural data access and decision-making.</li>
-            <li><strong>Point Cloud ML – Basler & Hofmann:</strong> Developed voxel-based CNN with similarity-based reconstruction achieving 78% accuracy. Evaluated with IoU & F1 score, powering a 3D digital twin platform.</li>
-            <li><strong>PostgreSQL AI Pipeline – IBM Research:</strong> Implemented AI-powered SQL generation using LangChain and BIRD/custom evaluation framework to retrieve spatial satellite data.</li>
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            Projects
+          </h2>
+          <div className="space-y-8">
+            {/* iHomeLab */}
+            <div>
+              <h3 className="text-xl font-bold">Research Assistant</h3>
+              <p className="italic text-gray-600 dark:text-gray-400">
+                iHomeLab – Lucerne University, Lucerne | Mar 2023 – Feb 2025
+              </p>
+              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300">
+                <li>
+                  Addressed farmers’ need for real-time technical support: built a RAG-powered educational chatbot
+                  (LLAMA 3.1 &amp; CRAG) using AWS Lambda and S3 to enable on-demand Q&amp;A and feedback in the agriculture
+                  domain—resulting in measurable improvements in crop management and production quality.
+                </li>
+                <li>
+                  Improved weak-signal detection for Ambient Assisted Living: engineered a framework combining vector similarity
+                  search and clustering to enhance noisy AAL sensor data, then trained CNN/RNN time-series models to predict
+                  elderly presence in rooms—enabling more reliable monitoring and informing the design of safer, stress-free
+                  living environments.
+                </li>
+              </ul>
+            </div>
+
+            {/* Basler & Hofmann */}
+            <div>
+              <h3 className="text-xl font-bold">Data Engineer Intern</h3>
+              <p className="italic text-gray-600 dark:text-gray-400">
+                Basler &amp; Hofmann – Zurich | Apr 2023 – May 2024
+              </p>
+              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300">
+                <li>
+                  Enhanced B&amp;H Digital Twin Quality: developed voxel-based CNN models for point cloud segmentation to label
+                  each point—enabling higher-fidelity infrastructure visualization and improving data quality for digital twin
+                  platform developers.
+                </li>
+                <li>
+                  Accelerated HR Data Retrieval: built an agentic Q&amp;A pipeline over HR databases by applying LLMs for automated
+                  SQL generation and querying—significantly speeding up data extraction for the HR team.
+                </li>
+                <li>
+                  Streamlined Revit Workflows with AI: architected a hybrid PyRevit + LLM pipeline for rule-based model validation
+                  and task automation—delivering a 30% workflow speed-up, allowing non-technical staff to interact via Revit and
+                  reducing project time while maintaining optimized results.
+                </li>
+              </ul>
+            </div>
+
+            {/* Standalone Projects */}
+            <div>
+              <h3 className="text-xl font-bold">Accent Classification from Voice</h3>
+              <p className="italic text-gray-600 dark:text-gray-400">Tech: Wav2Vec2, Common Voice, PyTorch, Hugging Face, Torchaudio, Librosa, Scikit-learn</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold">Synthetic Data Generation Pipeline for Enterprise AI</h3>
+              <p className="italic text-gray-600 dark:text-gray-400">
+                Tech: Large Language Models (LLMs), Prompt Engineering, Advanced Prompt Engineering
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold">Realtime Multi-Agent Conversational System</h3>
+              <p className="italic text-gray-600 dark:text-gray-400">
+                Tech: LangChain, LangGraph, MCP, LLM, Python, Tool Augmentation, Asynchronous Programming, OpenAI, DALL·E,
+                Matplotlib, Prompt Engineering, Agent Design, Server-Sent Events, Conversational AI, Generative AI, Multi-Agent Systems
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Awards & Certification */}
+        <section>
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            Awards &amp; Certification
+          </h2>
+          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300">
+            <li>
+              Python Programming Certificate (2020) &mdash; EDUCBA Python Institute, Toronto, Canada
+            </li>
+            <li>
+              Certificate in AWS Cloud Architect (2018) &mdash; Metro College of Technology, Toronto, Canada
+            </li>
+            <li>
+              Professional Diploma in Interior/Fashion Design (2012) &mdash; George Brown College, Toronto, Canada
+            </li>
           </ul>
         </section>
 
+        {/* Education */}
         <section>
-          <h2 className="text-2xl font-semibold border-b pb-1 mb-4 text-blue-800 dark:text-blue-300">Education</h2>
-          <ul className="list-disc list-inside">
-            <li>Master of Science in Data Science – HSLU, Lucerne (2022–2025)</li>
-            <li>Bachelor of Engineering in Electrical Engineering – IKU (2011)</li>
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            Education
+          </h2>
+          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300">
+            <li>
+              Master of Science in Data Science &mdash; HSLU (Lucerne University of Applied Sciences) | Sep 2022 – Feb 2025
+            </li>
+            <li>
+              Bachelor of Engineering in Electrical Engineering (Automation &amp; Control Systems) &mdash; IKIU | Sep 2007 – Jan 2011
+            </li>
           </ul>
         </section>
 
+        {/* Technical Skills */}
         <section>
-          <h2 className="text-2xl font-semibold border-b pb-1 mb-4 text-blue-800 dark:text-blue-300">Certificates</h2>
-          <ul className="list-disc list-inside">
-            <li>Diploma in Python – EDUCBA, Toronto (2020)</li>
-            <li>Diploma in AWS Cloud Architect – Metro College of Tech, Toronto (2018)</li>
-            <li>Diploma in Interior Architecture – George Brown College (2012)</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold border-b pb-1 mb-4 text-blue-800 dark:text-blue-300">Technical Skills</h2>
-          <ul className="columns-2 md:columns-3 gap-4 list-disc list-inside">
-            <li>AWS, Azure, GCP</li>
-            <li>Python, JavaScript, Java, C++</li>
-            <li>PyTorch, TensorFlow, Scikit-learn</li>
-            <li>PostgreSQL, MongoDB, Redis</li>
-            <li>Kafka, Spark, Flink</li>
-            <li>Docker, Kubernetes, Jenkins</li>
-            <li>LLMs, RAG, GANs, LangGraph</li>
-            <li>GeoPandas, QGIS, PostGIS</li>
-            <li>Git, RESTful APIs, Web Scraping</li>
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            Technical Skills
+          </h2>
+          <ul className="columns-2 md:columns-3 gap-4 list-disc list-inside text-gray-800 dark:text-gray-300">
+            <li>AI/ML: GPT-4, LLaMA, Hugging Face, PyTorch, TensorFlow, Scikit-learn, RLHF, QLoRA, Wav2Vec2</li>
+            <li>GenAI &amp; Agents: LangChain, LangGraph, OpenAI Assistants API, RAG, GraphRAG, Prompt Engineering</li>
+            <li>Computer Vision: YOLOv8, OpenCV, 3D Reconstruction, SLAM, Image-to-Text, WebXR, Unity3D</li>
+            <li>Data Engineering: Kafka, Airflow, FastAPI, Docker, Kubernetes, PostgreSQL, MongoDB, DBT</li>
+            <li>MLOps &amp; Deployment: CI/CD (GitHub Actions), Azure, GCP (Vertex AI, BigQuery), AWS (SageMaker)</li>
+            <li>Analytics &amp; BI: Power BI, Streamlit, SQL, Experiment Design, A/B Testing, Feature Importance</li>
+            <li>NLP &amp; Search: Text-to-SQL, Semantic Search, pgvector, Neo4j, Cypher, LangChain Tools</li>
+            <li>Software Dev: REST APIs, Pydantic, JSON, Jupyter, React (basic integration)</li>
+            <li>Soft Skills: Technical leadership, agile mindset, cross-functional teamwork, mentoring</li>
+            <li>Languages: English (fluent)</li>
           </ul>
         </section>
 
@@ -181,9 +297,26 @@ export default function CVPage() {
         <footer className="text-center py-10 mt-10 border-t border-gray-300 dark:border-gray-700">
           <p className="text-sm mb-3">© {new Date().getFullYear()} Narges Vahdani. All rights reserved.</p>
           <div className="flex justify-center space-x-6">
-            <a href="mailto:nargesvahdani@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">✉️ Email</a>
-            <a href="https://www.linkedin.com/in/narghotbi/" target="_blank" className="text-blue-600 dark:text-blue-400 hover:underline">🔗 LinkedIn</a>
-            <a href="/Narges-Vahdani-CV.pdf" download className="text-blue-600 dark:text-blue-400 hover:underline">📄 CV</a>
+            <a
+              href="mailto:nargesvahdani@gmail.com"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              ✉️ Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/narghotbi/"
+              target="_blank"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              🔗 LinkedIn
+            </a>
+            <a
+              href="/Narges-Vahdani-CV.pdf"
+              download
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              📄 CV
+            </a>
           </div>
         </footer>
 

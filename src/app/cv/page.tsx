@@ -26,10 +26,10 @@ export default function CVPage() {
       <nav className="flex justify-between items-center px-6 md:px-10 py-4 bg-white/60 dark:bg-gray-800/80 backdrop-blur-lg shadow-md sticky top-0 z-50 mb-8 rounded-xl">
         <div>
           <h1 className="text-xl md:text-2xl font-bold text-blue-900 dark:text-white">
-            Narges Vahdani
+            NARGES VAHDANI
           </h1>
           <h2 className="text-sm md:text-base text-gray-600 dark:text-gray-300">
-            Data Scientist &amp; AI Engineer
+            DATA SCIENTIST & AI ENGINEER
           </h2>
         </div>
         <div className="flex gap-4 items-center">
@@ -56,8 +56,8 @@ export default function CVPage() {
       </nav>
 
       <section className="max-w-5xl mx-auto bg-white dark:bg-gray-900 p-8 md:p-14 shadow-xl rounded-3xl space-y-12 print:shadow-none print:bg-white animate-fade-in">
-        {/* Header */}
-        <header className="text-center space-y-4">
+        {/* Header & Contact */}
+        <header className="space-y-4">
           <div className="flex flex-col items-center justify-center gap-4">
             <Image
               src="/profile.jpg"
@@ -67,97 +67,127 @@ export default function CVPage() {
               className="rounded-full border-4 border-blue-200 shadow-md"
             />
             <h1 className="text-4xl font-bold text-blue-900 dark:text-white">
-              Narges Vahdani
+              NARGES VAHDANI
             </h1>
             <h2 className="text-lg font-medium text-gray-700 dark:text-gray-300">
-              Data Scientist &amp; AI Engineer
+              DATA SCIENTIST & AI ENGINEER
             </h2>
+          </div>
+          <div className="text-center space-y-1">
             <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
-              📍 8952 Zurich | ✉️{' '}
-              <a
-                href="mailto:nargesvahdani@gmail.com"
-                className="text-blue-600 hover:underline"
-              >
-                nargesvahdani@gmail.com
-              </a>{' '}
-              | 📞 +41 76 270 0440
+              Nationality: Canadian | Work Permit: L permit (Post-Study Job Search – Swiss Graduate)
             </p>
-            <a
-              href="https://www.linkedin.com/in/narghotbi/"
-              className="text-blue-600 hover:underline font-medium"
-              target="_blank"
-            >
-              View LinkedIn Profile ↗
-            </a>
-            <div className="space-x-4 pt-2 print:hidden">
-              <a
-                href="/Narges-Vahdani-CV.pdf"
-                download
-                className="bg-blue-700 hover:bg-blue-800 text-white px-5 py-2 rounded-full shadow-md transition-all"
-              >
-                📄 Download CV
+            <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
+              📞 +41 76 270 04 40  | 📧 
+              <a href="mailto:nargesvahdani@gmail.com" className="text-blue-600 hover:underline">
+                nargesvahdani@gmail.com
               </a>
-              <button
-                onClick={handlePrint}
-                className="bg-gray-600 hover:bg-gray-700 text-white px-5 py-2 rounded-full shadow-md transition-all"
+            </p>
+            <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
+              📍 8952 Zurich, Switzerland
+            </p>
+            <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
+              🔗 
+              <a
+                href="https://www.linkedin.com/in/narghotbi/"
+                className="text-blue-600 hover:underline"
+                target="_blank"
               >
-                🖨️ Print Page
-              </button>
-            </div>
+                www.linkedin.com/in/narghotbi/
+              </a>
+                |  🌐 
+              <a
+                href="https://nargesvahdaniweb.netlify.app/"
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                nargesvahdaniweb.netlify.app
+              </a>
+                |  💻 
+              <a
+                href="https://github.com/nargesghv"
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                github.com/nargesghv
+              </a>
+            </p>
+            <p className="text-sm italic text-gray-500 dark:text-gray-400">
+              *May qualify for the precedence rule waiver under Art. 21 Abs. 3 AuG
+            </p>
+          </div>
+          <div className="flex justify-center space-x-4 pt-2 print:hidden">
+            <a
+              href="/Narges-Vahdani-CV.pdf"
+              download
+              className="bg-blue-700 hover:bg-blue-800 text-white px-5 py-2 rounded-full shadow-md transition-all"
+            >
+              📄 Download CV
+            </a>
+            <button
+              onClick={handlePrint}
+              className="bg-gray-600 hover:bg-gray-700 text-white px-5 py-2 rounded-full shadow-md transition-all"
+            >
+              🖨️ Print Page
+            </button>
           </div>
         </header>
 
         {/* Summary */}
         <section>
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            Summary
+            SUMMARY
           </h2>
           <p className="text-justify text-gray-800 dark:text-gray-300 leading-relaxed">
-            Creative and driven professional blending technology, design, and applied science to tackle
-            real-world challenges. Skilled at hands-on development and strategic problem-solving, with
-            a practical, can-do attitude and a collaborative spirit. Energetic and adaptable, I thrive on
-            learning new skills, overcoming obstacles, and contributing to impactful projects.
+            Creative and driven professional blending technology, design, and applied science to tackle real-world
+            challenges. Skilled at hands-on development and strategic problem-solving, with a practical, can-do attitude
+            and a collaborative spirit. Energetic and adaptable, I thrive on learning new skills, overcoming obstacles,
+            and contributing to impactful projects.
           </p>
         </section>
 
-        {/* Work Experiences */}
+        {/* Work Experience */}
         <section>
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            Work Experience
+            WORK EXPERIENCE
           </h2>
           <div className="space-y-8">
             {/* IBM Research */}
             <div>
-              <h3 className="text-xl font-bold">Master Thesis &amp; Intern</h3>
+              <h3 className="text-xl font-bold">
+                Master Thesis &amp; Intern
+              </h3>
               <p className="italic text-gray-600 dark:text-gray-400">
-                Multidimensional Database – IBM Research, Zurich | Sep 2024 – Feb 2025
+                Multidimensional Database – IBM Research – Zurich  |  Sep 2024 – Feb 2025
               </p>
-              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300">
+              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
                   Collaborated on the Agent Bee team for IBM’s Geospatial Studio, adding agentic tools that enable automatic
                   prompt refinement, on-the-fly model tuning, and semantic dataset selection via vector-based retrieval.
                 </li>
                 <li>
-                  Partnered with the Zurich NL-to-SQL team to fine-tune models on client data; when data quality was insufficient,
-                  designed an end-to-end pipeline using IBM Granite 3 and advanced prompt engineering to generate high-quality
-                  synthetic GeospatialSQL training data—enabling LLMs to be fine-tuned on domain-specific spatial tasks with
-                  minimal real data.
+                  Collaborated with the Zurich NL-to-SQL team to fine-tune models on client data; when data quality was
+                  insufficient, designed an end-to-end pipeline using IBM Granite 3 and advanced prompt engineering to
+                  generate high-quality synthetic GeospatialSQL training data—enabling LLMs to be fine-tuned on domain-
+                  specific spatial tasks with minimal real data, and was praised for this innovative solution.
                 </li>
                 <li>
                   Created a user-friendly, multimodal natural language–to–SQL interface for IBM’s multidimensional geospatial
-                  database by fine-tuning LLMs (IBM Granite, LLaMA 3.2) with SFT, QLoRA, and RLHF—ensuring accurate, interpretable
-                  geospatial query results through targeted benchmark evaluations.
+                  database by fine-tuning large language models (IBM Granite, LLaMA 3.2) with SFT, QLoRA, and RLHF—ensuring
+                  accurate, interpretable geospatial query results through targeted benchmark evaluations.
                 </li>
               </ul>
             </div>
 
             {/* PMO Group */}
             <div>
-              <h3 className="text-xl font-bold">Director, Data Engineering</h3>
+              <h3 className="text-xl font-bold">
+                Director, Data Engineering
+              </h3>
               <p className="italic text-gray-600 dark:text-gray-400">
-                PMO Group (Business Analysis) – Toronto | Sep 2018 – Jan 2021
+                PMO Group (Business Analysis) – Toronto  |  Sep 2018 – Jan 2021
               </p>
-              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300">
+              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
                   Built a predictive real estate analytics platform integrating Power BI and SAP, delivering market insights to executives.
                 </li>
@@ -172,26 +202,25 @@ export default function CVPage() {
         {/* Projects */}
         <section>
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            Projects
+            PROJECTS  ( GITHUB : HTTPS://GITHUB.COM/NARGESGHV )
           </h2>
           <div className="space-y-8">
             {/* iHomeLab */}
             <div>
               <h3 className="text-xl font-bold">Research Assistant</h3>
               <p className="italic text-gray-600 dark:text-gray-400">
-                iHomeLab – Lucerne University, Lucerne | Mar 2023 – Feb 2025
+                iHomeLab – Lucerne University – Lucerne  |  Mar 2023 – Feb 2025
               </p>
-              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300">
+              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
-                  Addressed farmers’ need for real-time technical support: built a RAG-powered educational chatbot
-                  (LLAMA 3.1 &amp; CRAG) using AWS Lambda and S3 to enable on-demand Q&amp;A and feedback in the agriculture
-                  domain—resulting in measurable improvements in crop management and production quality.
+                  Addressed farmers’ need for real-time technical support: built a RAG-powered educational chatbot (LLAMA 3.1 & CRAG)
+                  using AWS Lambda and S3 to enable on-demand Q&amp;A and feedback in the agriculture domain—resulting in measurable
+                  improvements in crop management and production quality.
                 </li>
                 <li>
                   Improved weak-signal detection for Ambient Assisted Living: engineered a framework combining vector similarity
-                  search and clustering to enhance noisy AAL sensor data, then trained CNN/RNN time-series models to predict
-                  elderly presence in rooms—enabling more reliable monitoring and informing the design of safer, stress-free
-                  living environments.
+                  search and clustering to enhance noisy AAL sensor data, then trained CNN/RNN time-series models to predict elderly
+                  presence in rooms—enabling more reliable monitoring and informing the design of safer, stress-free living environments.
                 </li>
               </ul>
             </div>
@@ -200,39 +229,40 @@ export default function CVPage() {
             <div>
               <h3 className="text-xl font-bold">Data Engineer Intern</h3>
               <p className="italic text-gray-600 dark:text-gray-400">
-                Basler &amp; Hofmann – Zurich | Apr 2023 – May 2024
+                Basler &amp; Hofmann – Zurich  |  Apr 2023 – May 2024
               </p>
-              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300">
+              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
-                  Enhanced B&amp;H Digital Twin Quality: developed voxel-based CNN models for point cloud segmentation to label
-                  each point—enabling higher-fidelity infrastructure visualization and improving data quality for digital twin
-                  platform developers.
+                  Enhanced B&amp;H Digital Twin Quality: developed voxel-based CNN models for point cloud segmentation to label each point,
+                  enabling higher-fidelity infrastructure visualization and improving data quality for digital twin platform developers.
                 </li>
                 <li>
-                  Accelerated HR Data Retrieval: built an agentic Q&amp;A pipeline over HR databases by applying LLMs for automated
-                  SQL generation and querying—significantly speeding up data extraction for the HR team.
+                  Accelerated HR Data Retrieval: built an agentic Q&amp;A pipeline over HR databases by applying LLMs for automated SQL
+                  generation and querying, significantly speeding up data extraction for the HR team.
                 </li>
                 <li>
-                  Streamlined Revit Workflows with AI: architected a hybrid PyRevit + LLM pipeline for rule-based model validation
-                  and task automation—delivering a 30% workflow speed-up, allowing non-technical staff to interact via Revit and
-                  reducing project time while maintaining optimized results.
+                  Streamlined Revit Workflows with AI: architected a hybrid PyRevit + LLM pipeline for rule-based model validation and task
+                  automation—delivering a 30% workflow speed-up, allowing non-technical staff to interact via Revit and reducing project time
+                  while maintaining optimized results.
                 </li>
               </ul>
             </div>
 
             {/* Standalone Projects */}
             <div>
-              <h3 className="text-xl font-bold">Accent Classification from Voice</h3>
-              <p className="italic text-gray-600 dark:text-gray-400">Tech: Wav2Vec2, Common Voice, PyTorch, Hugging Face, Torchaudio, Librosa, Scikit-learn</p>
+              <h3 className="text-xl font-bold">🎙 Accent Classification from Voice</h3>
+              <p className="italic text-gray-600 dark:text-gray-400">
+                Tech: Wav2Vec2, Common Voice, PyTorch, Hugging Face, Torchaudio, Librosa, Scikit-learn
+              </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold">Synthetic Data Generation Pipeline for Enterprise AI</h3>
+              <h3 className="text-xl font-bold">📌 Synthetic Data Generation Pipeline for Enterprise AI (NLtoSQL Team IBM Research)</h3>
               <p className="italic text-gray-600 dark:text-gray-400">
                 Tech: Large Language Models (LLMs), Prompt Engineering, Advanced Prompt Engineering
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold">Realtime Multi-Agent Conversational System</h3>
+              <h3 className="text-xl font-bold">🤖 Realtime Multi-Agent Conversational System using LangGraph and MCP</h3>
               <p className="italic text-gray-600 dark:text-gray-400">
                 Tech: LangChain, LangGraph, MCP, LLM, Python, Tool Augmentation, Asynchronous Programming, OpenAI, DALL·E,
                 Matplotlib, Prompt Engineering, Agent Design, Server-Sent Events, Conversational AI, Generative AI, Multi-Agent Systems
@@ -244,17 +274,17 @@ export default function CVPage() {
         {/* Awards & Certification */}
         <section>
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            Awards &amp; Certification
+            AWARDS AND CERTIFICATION
           </h2>
-          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300">
+          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
             <li>
-              Python Programming Certificate (2020) &mdash; EDUCBA Python Institute, Toronto, Canada
+              Python Programming Certificate (2020) — EDUCBA Python Institute, Toronto, Canada
             </li>
             <li>
-              Certificate in AWS Cloud Architect (2018) &mdash; Metro College of Technology, Toronto, Canada
+              Certificate in AWS Cloud Architect (2018) — Metro College of Technology, Toronto, Canada
             </li>
             <li>
-              Professional Diploma in Interior/Fashion Design (2012) &mdash; George Brown College, Toronto, Canada
+              Professional Diploma in Interior/Fashion Design (2012) — George Brown College, Toronto, Canada
             </li>
           </ul>
         </section>
@@ -262,14 +292,14 @@ export default function CVPage() {
         {/* Education */}
         <section>
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            Education
+            EDUCATION
           </h2>
-          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300">
+          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
             <li>
-              Master of Science in Data Science &mdash; HSLU (Lucerne University of Applied Sciences) | Sep 2022 – Feb 2025
+              Master of Science in Data Science — HSLU (Lucerne University of Applied Sciences) | Sep 2022 – Feb 2025
             </li>
             <li>
-              Bachelor of Engineering in Electrical Engineering (Automation &amp; Control Systems) &mdash; IKIU | Sep 2007 – Jan 2011
+              Bachelor of Engineering in Electrical Engineering (Automation & Control Systems) — IKIU | Sep 2007 – Jan 2011
             </li>
           </ul>
         </section>
@@ -277,19 +307,52 @@ export default function CVPage() {
         {/* Technical Skills */}
         <section>
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            Technical Skills
+            SKILLS
           </h2>
-          <ul className="columns-2 md:columns-3 gap-4 list-disc list-inside text-gray-800 dark:text-gray-300">
+          <ul className="columns-2 md:columns-3 gap-4 list-disc list-inside text-gray-800 dark:text-gray-300 space-y-1">
             <li>AI/ML: GPT-4, LLaMA, Hugging Face, PyTorch, TensorFlow, Scikit-learn, RLHF, QLoRA, Wav2Vec2</li>
-            <li>GenAI &amp; Agents: LangChain, LangGraph, OpenAI Assistants API, RAG, GraphRAG, Prompt Engineering</li>
+            <li>GenAI & Agents: LangChain, LangGraph, OpenAI Assistants API, RAG, GraphRAG, Prompt Engineering</li>
             <li>Computer Vision: YOLOv8, OpenCV, 3D Reconstruction, SLAM, Image-to-Text, WebXR, Unity3D</li>
             <li>Data Engineering: Kafka, Airflow, FastAPI, Docker, Kubernetes, PostgreSQL, MongoDB, DBT</li>
-            <li>MLOps &amp; Deployment: CI/CD (GitHub Actions), Azure, GCP (Vertex AI, BigQuery), AWS (SageMaker)</li>
-            <li>Analytics &amp; BI: Power BI, Streamlit, SQL, Experiment Design, A/B Testing, Feature Importance</li>
-            <li>NLP &amp; Search: Text-to-SQL, Semantic Search, pgvector, Neo4j, Cypher, LangChain Tools</li>
+            <li>MLOps & Deployment: CI/CD (GitHub Actions), Azure, GCP (Vertex AI, BigQuery), AWS (SageMaker)</li>
+            <li>Analytics & BI: Power BI, Streamlit, SQL, Experiment Design, A/B Testing, Feature Importance</li>
+            <li>NLP & Search: Text-to-SQL, Semantic Search, pgvector, Neo4j, Cypher, LangChain Tools</li>
             <li>Software Dev: REST APIs, Pydantic, JSON, Jupyter, React (basic integration)</li>
             <li>Soft Skills: Technical leadership, agile mindset, cross-functional teamwork, mentoring</li>
             <li>Languages: English (fluent)</li>
+          </ul>
+        </section>
+
+        {/* Additional Projects */}
+        <section>
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            ADDITIONAL PROJECTS
+          </h2>
+          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
+            <li>
+              📜 GraphRAG Legal Contract Intelligence — Tech: LangChain, Neo4j, FastAPI, Cypher, Pydantic
+            </li>
+            <li>
+              🛠 DriftAlert: Real-Time AI-Powered Schema Monitoring System — Tech: GPT-4o, LangChain Agents, PostgreSQL, Kafka, Guardrails, Pydantic, JSON
+            </li>
+            <li>
+              🗂 LangGraph AI Document Classifier — Tech: LangGraph, GPT-4, FastAPI, React, Tailwind, SQLite, Streamlit
+            </li>
+            <li>
+              💬 Real-Time AI Chatbot Project — Tech: GPT-4, Kafka, MongoDB, FAISS, FastAPI, Sentence Transformers
+            </li>
+            <li>
+              📈 Real-Time Business Insights Platform — Tech: Python, Kafka, Azure Cognitive Search, Ollama LLM, FastAPI, LLMOps
+            </li>
+            <li>
+              🏠 Real Estate Forecasting Platform — Tech: XGBoost, FAISS, FastAPI, Azure Blob, Azure SQL, Power BI
+            </li>
+            <li>
+              🖼 Real-Time Image Classification System — Tech: TensorFlow, CNN, Kafka, FastAPI, Docker, OpenCV
+            </li>
+            <li>
+              🩺 MachiStages of Menopause – Health Education Project — Tech: Gradient Boosting, Linear Regression, Synthetic Data, Feature Importance
+            </li>
           </ul>
         </section>
 
@@ -309,6 +372,20 @@ export default function CVPage() {
               className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               🔗 LinkedIn
+            </a>
+            <a
+              href="https://nargesvahdaniweb.netlify.app/"
+              target="_blank"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              🌐 Website
+            </a>
+            <a
+              href="https://github.com/nargesghv"
+              target="_blank"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              💻 GitHub
             </a>
             <a
               href="/Narges-Vahdani-CV.pdf"

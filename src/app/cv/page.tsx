@@ -29,7 +29,7 @@ export default function CVPage() {
             NARGES VAHDANI
           </h1>
           <h2 className="text-sm md:text-base text-gray-600 dark:text-gray-300">
-            DATA SCIENTIST & AI ENGINEER
+            DATA SCIENTIST &amp; AI ENGINEER
           </h2>
         </div>
         <div className="flex gap-4 items-center">
@@ -70,7 +70,7 @@ export default function CVPage() {
               NARGES VAHDANI
             </h1>
             <h2 className="text-lg font-medium text-gray-700 dark:text-gray-300">
-              DATA SCIENTIST & AI ENGINEER
+              DATA SCIENTIST &amp; AI ENGINEER
             </h2>
           </div>
           <div className="text-center space-y-1">
@@ -78,7 +78,7 @@ export default function CVPage() {
               Nationality: Canadian | Work Permit: L permit (Post-Study Job Search – Swiss Graduate)
             </p>
             <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
-              📞 +41 76 270 04 40  | 📧 
+              📞 +41 76 270 04 40&nbsp;|&nbsp;📧{' '}
               <a href="mailto:nargesvahdani@gmail.com" className="text-blue-600 hover:underline">
                 nargesvahdani@gmail.com
               </a>
@@ -87,27 +87,30 @@ export default function CVPage() {
               📍 8952 Zurich, Switzerland
             </p>
             <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
-              🔗 
+              🔗{' '}
               <a
                 href="https://www.linkedin.com/in/narghotbi/"
                 className="text-blue-600 hover:underline"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 www.linkedin.com/in/narghotbi/
               </a>
-                |  🌐 
+              &nbsp;|&nbsp;🌐{' '}
               <a
                 href="https://nargesvahdaniweb.netlify.app/"
                 className="text-blue-600 hover:underline"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 nargesvahdaniweb.netlify.app
               </a>
-                |  💻 
+              &nbsp;|&nbsp;💻{' '}
               <a
                 href="https://github.com/nargesghv"
                 className="text-blue-600 hover:underline"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 github.com/nargesghv
               </a>
@@ -154,11 +157,9 @@ export default function CVPage() {
           <div className="space-y-8">
             {/* IBM Research */}
             <div>
-              <h3 className="text-xl font-bold">
-                Master Thesis &amp; Intern
-              </h3>
+              <h3 className="text-xl font-bold">Master Thesis &amp; Intern</h3>
               <p className="italic text-gray-600 dark:text-gray-400">
-                Multidimensional Database – IBM Research – Zurich  |  Sep 2024 – Feb 2025
+                Multidimensional Database – IBM Research – Zurich | Sep 2024 – Feb 2025
               </p>
               <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
@@ -179,37 +180,11 @@ export default function CVPage() {
               </ul>
             </div>
 
-            {/* PMO Group */}
-            <div>
-              <h3 className="text-xl font-bold">
-                Director, Data Engineering
-              </h3>
-              <p className="italic text-gray-600 dark:text-gray-400">
-                PMO Group (Business Analysis) – Toronto  |  Sep 2018 – Jan 2021
-              </p>
-              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
-                <li>
-                  Built a predictive real estate analytics platform integrating Power BI and SAP, delivering market insights to executives.
-                </li>
-                <li>
-                  Deployed a real-time app using fine-tuned regression models to forecast housing prices across Toronto neighborhoods.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Projects */}
-        <section>
-          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            PROJECTS  ( GITHUB : HTTPS://GITHUB.COM/NARGESGHV )
-          </h2>
-          <div className="space-y-8">
             {/* iHomeLab */}
             <div>
               <h3 className="text-xl font-bold">Research Assistant</h3>
               <p className="italic text-gray-600 dark:text-gray-400">
-                iHomeLab – Lucerne University – Lucerne  |  Mar 2023 – Feb 2025
+                iHomeLab – Lucerne University – Lucerne | Mar 2023 – Feb 2025
               </p>
               <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
@@ -229,7 +204,7 @@ export default function CVPage() {
             <div>
               <h3 className="text-xl font-bold">Data Engineer Intern</h3>
               <p className="italic text-gray-600 dark:text-gray-400">
-                Basler &amp; Hofmann – Zurich  |  Apr 2023 – May 2024
+                Basler &amp; Hofmann – Zurich | Apr 2023 – May 2024
               </p>
               <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
@@ -248,15 +223,40 @@ export default function CVPage() {
               </ul>
             </div>
 
-            {/* Standalone Projects */}
+            {/* PMO Group */}
             <div>
-              <h3 className="text-xl font-bold">🎙 Accent Classification from Voice</h3>
+              <h3 className="text-xl font-bold">Director, Data Engineering</h3>
+              <p className="italic text-gray-600 dark:text-gray-400">
+                PMO Group (Business Analysis) – Toronto | Sep 2018 – Jan 2021
+              </p>
+              <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
+                <li>
+                  Built a predictive real estate analytics platform integrating Power BI and SAP, delivering market insights to executives.
+                </li>
+                <li>
+                  Deployed a real-time app using fine-tuned regression models to forecast housing prices across Toronto neighborhoods.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects */}
+        <section>
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            PROJECTS (GITHUB: HTTPS://GITHUB.COM/NARGESGHV)
+          </h2>
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-xl font-bold">🎙️ Accent Classification from Voice</h3>
               <p className="italic text-gray-600 dark:text-gray-400">
                 Tech: Wav2Vec2, Common Voice, PyTorch, Hugging Face, Torchaudio, Librosa, Scikit-learn
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold">📌 Synthetic Data Generation Pipeline for Enterprise AI (NLtoSQL Team IBM Research)</h3>
+              <h3 className="text-xl font-bold">
+                📌 Synthetic Data Generation Pipeline for Enterprise AI (NLtoSQL Team IBM Research)
+              </h3>
               <p className="italic text-gray-600 dark:text-gray-400">
                 Tech: Large Language Models (LLMs), Prompt Engineering, Advanced Prompt Engineering
               </p>
@@ -271,10 +271,44 @@ export default function CVPage() {
           </div>
         </section>
 
+        {/* Additional Projects */}
+        <section>
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            ADDITIONAL PROJECTS
+          </h2>
+          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
+            <li>
+              📜 GraphRAG Legal Contract Intelligence — Tech: LangChain, Neo4j, FastAPI, Cypher, Pydantic
+            </li>
+            <li>
+              🛠️ DriftAlert: Real-Time AI-Powered Schema Monitoring System — Tech: GPT-4o, LangChain Agents, PostgreSQL, Kafka,
+              Guardrails, Pydantic, JSON
+            </li>
+            <li>
+              🗂️ LangGraph AI Document Classifier — Tech: LangGraph, GPT-4, FastAPI, React, Tailwind, SQLite, Streamlit
+            </li>
+            <li>
+              💬 Real-Time AI Chatbot Project — Tech: GPT-4, Kafka, MongoDB, FAISS, FastAPI, Sentence Transformers
+            </li>
+            <li>
+              📈 Real-Time Business Insights Platform — Tech: Python, Kafka, Azure Cognitive Search, Ollama LLM, FastAPI, LLMOps
+            </li>
+            <li>
+              🏠 Real Estate Forecasting Platform — Tech: XGBoost, FAISS, FastAPI, Azure Blob, Azure SQL, Power BI
+            </li>
+            <li>
+              🖼️ Real-Time Image Classification System — Tech: TensorFlow, CNN, Kafka, FastAPI, Docker, OpenCV
+            </li>
+            <li>
+              🩺 MachiStages of Menopause – Health Education Project — Tech: Gradient Boosting, Linear Regression, Synthetic Data, Feature Importance
+            </li>
+          </ul>
+        </section>
+
         {/* Awards & Certification */}
         <section>
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            AWARDS AND CERTIFICATION
+            AWARDS &amp; CERTIFICATION
           </h2>
           <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
             <li>
@@ -299,7 +333,7 @@ export default function CVPage() {
               Master of Science in Data Science — HSLU (Lucerne University of Applied Sciences) | Sep 2022 – Feb 2025
             </li>
             <li>
-              Bachelor of Engineering in Electrical Engineering (Automation & Control Systems) — IKIU | Sep 2007 – Jan 2011
+              Bachelor of Engineering in Electrical Engineering (Automation &amp; Control Systems) — IKIU | Sep 2007 – Jan 2011
             </li>
           </ul>
         </section>
@@ -311,48 +345,15 @@ export default function CVPage() {
           </h2>
           <ul className="columns-2 md:columns-3 gap-4 list-disc list-inside text-gray-800 dark:text-gray-300 space-y-1">
             <li>AI/ML: GPT-4, LLaMA, Hugging Face, PyTorch, TensorFlow, Scikit-learn, RLHF, QLoRA, Wav2Vec2</li>
-            <li>GenAI & Agents: LangChain, LangGraph, OpenAI Assistants API, RAG, GraphRAG, Prompt Engineering</li>
+            <li>GenAI &amp; Agents: LangChain, LangGraph, OpenAI Assistants API, RAG, GraphRAG, Prompt Engineering</li>
             <li>Computer Vision: YOLOv8, OpenCV, 3D Reconstruction, SLAM, Image-to-Text, WebXR, Unity3D</li>
             <li>Data Engineering: Kafka, Airflow, FastAPI, Docker, Kubernetes, PostgreSQL, MongoDB, DBT</li>
-            <li>MLOps & Deployment: CI/CD (GitHub Actions), Azure, GCP (Vertex AI, BigQuery), AWS (SageMaker)</li>
-            <li>Analytics & BI: Power BI, Streamlit, SQL, Experiment Design, A/B Testing, Feature Importance</li>
-            <li>NLP & Search: Text-to-SQL, Semantic Search, pgvector, Neo4j, Cypher, LangChain Tools</li>
+            <li>MLOps &amp; Deployment: CI/CD (GitHub Actions), Azure, GCP (Vertex AI, BigQuery), AWS (SageMaker)</li>
+            <li>Analytics &amp; BI: Power BI, Streamlit, SQL, Experiment Design, A/B Testing, Feature Importance</li>
+            <li>NLP &amp; Search: Text-to-SQL, Semantic Search, pgvector, Neo4j, Cypher, LangChain Tools</li>
             <li>Software Dev: REST APIs, Pydantic, JSON, Jupyter, React (basic integration)</li>
             <li>Soft Skills: Technical leadership, agile mindset, cross-functional teamwork, mentoring</li>
             <li>Languages: English (fluent)</li>
-          </ul>
-        </section>
-
-        {/* Additional Projects */}
-        <section>
-          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
-            ADDITIONAL PROJECTS
-          </h2>
-          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
-            <li>
-              📜 GraphRAG Legal Contract Intelligence — Tech: LangChain, Neo4j, FastAPI, Cypher, Pydantic
-            </li>
-            <li>
-              🛠 DriftAlert: Real-Time AI-Powered Schema Monitoring System — Tech: GPT-4o, LangChain Agents, PostgreSQL, Kafka, Guardrails, Pydantic, JSON
-            </li>
-            <li>
-              🗂 LangGraph AI Document Classifier — Tech: LangGraph, GPT-4, FastAPI, React, Tailwind, SQLite, Streamlit
-            </li>
-            <li>
-              💬 Real-Time AI Chatbot Project — Tech: GPT-4, Kafka, MongoDB, FAISS, FastAPI, Sentence Transformers
-            </li>
-            <li>
-              📈 Real-Time Business Insights Platform — Tech: Python, Kafka, Azure Cognitive Search, Ollama LLM, FastAPI, LLMOps
-            </li>
-            <li>
-              🏠 Real Estate Forecasting Platform — Tech: XGBoost, FAISS, FastAPI, Azure Blob, Azure SQL, Power BI
-            </li>
-            <li>
-              🖼 Real-Time Image Classification System — Tech: TensorFlow, CNN, Kafka, FastAPI, Docker, OpenCV
-            </li>
-            <li>
-              🩺 MachiStages of Menopause – Health Education Project — Tech: Gradient Boosting, Linear Regression, Synthetic Data, Feature Importance
-            </li>
           </ul>
         </section>
 
@@ -369,6 +370,7 @@ export default function CVPage() {
             <a
               href="https://www.linkedin.com/in/narghotbi/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               🔗 LinkedIn
@@ -376,6 +378,7 @@ export default function CVPage() {
             <a
               href="https://nargesvahdaniweb.netlify.app/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               🌐 Website
@@ -383,6 +386,7 @@ export default function CVPage() {
             <a
               href="https://github.com/nargesghv"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               💻 GitHub

@@ -29,7 +29,7 @@ export default function CVPage() {
             NARGES VAHDANI
           </h1>
           <h2 className="text-sm md:text-base text-gray-600 dark:text-gray-300">
-            DATA SCIENTIST &amp; AI ENGINEER
+            ML ENGINEER &amp; DATA SCIENTIST
           </h2>
         </div>
         <div className="flex gap-4 items-center">
@@ -70,21 +70,21 @@ export default function CVPage() {
               NARGES VAHDANI
             </h1>
             <h2 className="text-lg font-medium text-gray-700 dark:text-gray-300">
-              DATA SCIENTIST &amp; AI ENGINEER
+              ML Engineer • Multi-Agent Systems • RAG • LLMs
             </h2>
           </div>
           <div className="text-center space-y-1">
             <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
-              Nationality: Canadian | Work Permit: L permit (Post-Study Job Search – Swiss Graduate)
+              Nationality: Canadian &nbsp;|&nbsp; Swiss Work Permit: B
             </p>
             <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
-              📞 +41 76 270 04 40&nbsp;|&nbsp;📧{' '}
+              📞 +49 163 184 1802&nbsp;|&nbsp;📧{' '}
               <a href="mailto:nargesvahdani@gmail.com" className="text-blue-600 hover:underline">
                 nargesvahdani@gmail.com
               </a>
             </p>
             <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
-              📍 8952 Zurich, Switzerland
+              📍 Sadlenweg 10, 8055 Zurich, Switzerland
             </p>
             <p className="text-md md:text-lg text-gray-700 dark:text-gray-300">
               🔗{' '}
@@ -115,9 +115,6 @@ export default function CVPage() {
                 github.com/nargesghv
               </a>
             </p>
-            <p className="text-sm italic text-gray-500 dark:text-gray-400">
-              *May qualify for the precedence rule waiver under Art. 21 Abs. 3 AuG
-            </p>
           </div>
           <div className="flex justify-center space-x-4 pt-2 print:hidden">
             <a
@@ -136,17 +133,59 @@ export default function CVPage() {
           </div>
         </header>
 
-        {/* Summary */}
+        {/* Summary (About) */}
         <section>
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
             SUMMARY
           </h2>
-          <p className="text-justify text-gray-800 dark:text-gray-300 leading-relaxed">
-            Creative and driven professional blending technology, design, and applied science to tackle real-world
-            challenges. Skilled at hands-on development and strategic problem-solving, with a practical, can-do attitude
-            and a collaborative spirit. Energetic and adaptable, I thrive on learning new skills, overcoming obstacles,
-            and contributing to impactful projects.
+          <p className="text-justify text-gray-800 dark:text-gray-300 leading-relaxed mb-3">
+            I’m a versatile and results-driven professional bridging Data Science, AI/ML Engineering,
+            full-stack development, and DevOps/Cloud architecture. I specialize in Large Language
+            Models (LLMs), multi-agent systems, and Retrieval-Augmented Generation (RAG), designing
+            intelligent systems that turn data into real impact. My work spans end-to-end AI product
+            development, from data engineering and fine-tuning to deployment, MLOps, and real-time
+            analytics.
           </p>
+          <p className="text-justify text-gray-800 dark:text-gray-300 leading-relaxed">
+            I’m driven by the challenge of transforming complex data and AI problems into clear,
+            reliable, and human-centered solutions. At IBM Research, I built conversational GIS and
+            geospatial NL→SQL pipelines that turned technical complexity into clarity and speed, and
+            I’ve been hooked ever since. I thrive where innovation meets execution, working fast,
+            collaborating deeply, and pushing boundaries to build the next generation of agentic AI
+            systems.
+          </p>
+        </section>
+
+        {/* Key Achievements */}
+        <section>
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            KEY ACHIEVEMENTS
+          </h2>
+          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
+            <li>
+              Built a conversational geospatial NL→SQL interface at IBM Research using IBM Granite,
+              LLaMA, QLoRA and RLHF, improving query accuracy on complex multi-table geospatial
+              datasets.
+            </li>
+            <li>
+              Designed a synthetic GeospatialSQL data generation pipeline using advanced prompt
+              engineering and LLMs, enabling high-quality domain-specific training data when real
+              client data was limited.
+            </li>
+            <li>
+              Delivered a RAG-powered educational chatbot (LLaMA 3.1 &amp; CRAG) on AWS for real-time
+              agronomic Q&amp;A, helping farmers access expert knowledge on demand.
+            </li>
+            <li>
+              Developed voxel-based CNN models for point-cloud segmentation and automated SQL Q&amp;A
+              over HR databases at Basler &amp; Hofmann, accelerating Digital Twin quality checks and
+              data retrieval.
+            </li>
+            <li>
+              Built predictive real-estate analytics and price forecasting pipelines with Power BI,
+              SAP and ML models, supporting investment and strategy decisions at PMO Group.
+            </li>
+          </ul>
         </section>
 
         {/* Work Experience */}
@@ -163,19 +202,20 @@ export default function CVPage() {
               </p>
               <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
-                  Collaborated on the Agent Bee team for IBM’s Geospatial Studio, adding agentic tools that enable automatic
-                  prompt refinement, on-the-fly model tuning, and semantic dataset selection via vector-based retrieval.
+                  Contributed to the Agent Bee team for IBM’s Geospatial Studio by adding agentic tools
+                  for automatic prompt refinement, on-the-fly model tuning, and semantic dataset
+                  selection via vector and graph-based retrieval.
                 </li>
                 <li>
-                  Collaborated with the Zurich NL-to-SQL team to fine-tune models on client data; when data quality was
-                  insufficient, designed an end-to-end pipeline using IBM Granite 3 and advanced prompt engineering to
-                  generate high-quality synthetic GeospatialSQL training data—enabling LLMs to be fine-tuned on domain-
-                  specific spatial tasks with minimal real data, and was praised for this innovative solution.
+                  Collaborated with the Zurich NL-to-SQL team to fine-tune models on client data; when
+                  data was insufficient, designed an end-to-end pipeline using IBM Granite 3 and
+                  advanced prompt engineering to generate high-quality synthetic GeospatialSQL
+                  training data.
                 </li>
                 <li>
-                  Created a user-friendly, multimodal natural language–to–SQL interface for IBM’s multidimensional geospatial
-                  database by fine-tuning large language models (IBM Granite, LLaMA 3.2) with SFT, QLoRA, and RLHF—ensuring
-                  accurate, interpretable geospatial query results through targeted benchmark evaluations.
+                  Built a multimodal natural language-to-SQL interface for IBM’s multidimensional
+                  geospatial DB by fine-tuning LLMs (IBM Granite, LLaMA 3.2) with SFT, QLoRA and RLHF,
+                  and benchmarking for accurate, interpretable geospatial queries.
                 </li>
               </ul>
             </div>
@@ -188,14 +228,14 @@ export default function CVPage() {
               </p>
               <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
-                  Addressed farmers’ need for real-time technical support: built a RAG-powered educational chatbot (LLAMA 3.1 & CRAG)
-                  using AWS Lambda and S3 to enable on-demand Q&amp;A and feedback in the agriculture domain—resulting in measurable
-                  improvements in crop management and production quality.
+                  Built a RAG-powered educational chatbot (LLaMA 3.1 &amp; CRAG) on AWS Lambda &amp; S3 to
+                  provide on-demand Q&amp;A and feedback in the agriculture domain, improving crop
+                  management and production quality.
                 </li>
                 <li>
-                  Improved weak-signal detection for Ambient Assisted Living: engineered a framework combining vector similarity
-                  search and clustering to enhance noisy AAL sensor data, then trained CNN/RNN time-series models to predict elderly
-                  presence in rooms—enabling more reliable monitoring and informing the design of safer, stress-free living environments.
+                  Designed a framework combining vector similarity search and clustering to denoise
+                  noisy AAL sensor data, then trained CNN/RNN time-series models for room-level
+                  occupancy prediction, supporting safer Ambient Assisted Living.
                 </li>
               </ul>
             </div>
@@ -208,33 +248,35 @@ export default function CVPage() {
               </p>
               <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
-                  Enhanced B&amp;H Digital Twin Quality: developed voxel-based CNN models for point cloud segmentation to label each point,
-                  enabling higher-fidelity infrastructure visualization and improving data quality for digital twin platform developers.
+                  Enhanced Digital Twin quality by developing voxel-based CNN models for point-cloud
+                  segmentation, enabling higher-fidelity infrastructure visualization.
                 </li>
                 <li>
-                  Accelerated HR Data Retrieval: built an agentic Q&amp;A pipeline over HR databases by applying LLMs for automated SQL
-                  generation and querying, significantly speeding up data extraction for the HR team.
+                  Built an agentic Q&amp;A pipeline over HR databases using LLM-driven SQL generation and
+                  querying, significantly improving data access for HR stakeholders.
                 </li>
                 <li>
-                  Streamlined Revit Workflows with AI: architected a hybrid PyRevit + LLM pipeline for rule-based model validation and task
-                  automation—delivering a 30% workflow speed-up, allowing non-technical staff to interact via Revit and reducing project time
-                  while maintaining optimized results.
+                  Architected a hybrid PyRevit + LLM pipeline for rule-based model validation and task
+                  automation—speeding up Revit workflows and allowing non-technical staff to interact
+                  through familiar tools.
                 </li>
               </ul>
             </div>
 
             {/* PMO Group */}
             <div>
-              <h3 className="text-xl font-bold">Director, Data Engineering</h3>
+              <h3 className="text-xl font-bold">Director, Data Engineering (Business Analysis)</h3>
               <p className="italic text-gray-600 dark:text-gray-400">
-                PMO Group (Business Analysis) – Toronto | Sep 2018 – Jan 2021
+                PMO Group – Toronto | Sep 2018 – Jan 2021
               </p>
               <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300 space-y-2">
                 <li>
-                  Built a predictive real estate analytics platform integrating Power BI and SAP, delivering market insights to executives.
+                  Built a predictive real-estate analytics platform integrating Power BI and SAP,
+                  delivering actionable market insights for decision-makers.
                 </li>
                 <li>
-                  Deployed a real-time app using fine-tuned regression models to forecast housing prices across Toronto neighborhoods.
+                  Deployed a real-time app with fine-tuned regression models to forecast housing
+                  prices across Toronto neighborhoods, supporting investment and pricing strategies.
                 </li>
               </ul>
             </div>
@@ -255,17 +297,36 @@ export default function CVPage() {
             </div>
             <div>
               <h3 className="text-xl font-bold">
-                📌 Synthetic Data Generation Pipeline for Enterprise AI (NLtoSQL Team IBM Research)
+                🧠 AI Weblog Generator – Multi-Agent
+              </h3>
+              <p className="italic text-gray-600 dark:text-gray-400">
+                Tech: LangGraph, RAG, Multi-Agent, Groq, OpenAI, FastAPI, React{' '}
+                (<a
+                  href="https://ai-powered-blog-generator.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  live demo
+                </a>
+                )
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold">
+                📌 Synthetic Data Generation Pipeline for Enterprise AI (NLtoSQL Team, IBM Research)
               </h3>
               <p className="italic text-gray-600 dark:text-gray-400">
                 Tech: Large Language Models (LLMs), Prompt Engineering, Advanced Prompt Engineering
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold">🤖 Realtime Multi-Agent Conversational System using LangGraph and MCP</h3>
+              <h3 className="text-xl font-bold">
+                🤖 Realtime Multi-Agent Conversational System using LangGraph and MCP
+              </h3>
               <p className="italic text-gray-600 dark:text-gray-400">
-                Tech: LangChain, LangGraph, MCP, LLM, Python, Tool Augmentation, Asynchronous Programming, OpenAI, DALL·E,
-                Matplotlib, Prompt Engineering, Agent Design, Server-Sent Events, Conversational AI, Generative AI, Multi-Agent Systems
+                Tech: LangChain, LangGraph, MCP, LLM, Python, Tool Augmentation, Async Programming,
+                OpenAI, DALL·E, Matplotlib, Prompt Engineering, Agent Design, SSE, Conversational AI
               </p>
             </div>
           </div>
@@ -278,29 +339,36 @@ export default function CVPage() {
           </h2>
           <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
             <li>
-              📜 GraphRAG Legal Contract Intelligence — Tech: LangChain, Neo4j, FastAPI, Cypher, Pydantic
+              📜 GraphRAG Legal Contract Intelligence — Tech: LangChain, Neo4j, FastAPI, Cypher,
+              Pydantic
             </li>
             <li>
-              🛠️ DriftAlert: Real-Time AI-Powered Schema Monitoring System — Tech: GPT-4o, LangChain Agents, PostgreSQL, Kafka,
-              Guardrails, Pydantic, JSON
+              🛠️ DriftAlert: Real-Time AI-Powered Schema Monitoring — Tech: GPT-4o, LangChain
+              Agents, PostgreSQL, Kafka, Guardrails, Pydantic, JSON
             </li>
             <li>
-              🗂️ LangGraph AI Document Classifier — Tech: LangGraph, GPT-4, FastAPI, React, Tailwind, SQLite, Streamlit
+              🗂️ LangGraph AI Document Classifier — Tech: LangGraph, GPT-4, FastAPI, React,
+              Tailwind, SQLite, Streamlit
             </li>
             <li>
-              💬 Real-Time AI Chatbot Project — Tech: GPT-4, Kafka, MongoDB, FAISS, FastAPI, Sentence Transformers
+              💬 Real-Time AI Chatbot — Tech: GPT-4, Kafka, MongoDB, FAISS, FastAPI, Sentence
+              Transformers
             </li>
             <li>
-              📈 Real-Time Business Insights Platform — Tech: Python, Kafka, Azure Cognitive Search, Ollama LLM, FastAPI, LLMOps
+              📈 Real-Time Business Insights Platform — Tech: Python, Kafka, Azure Cognitive Search,
+              Ollama LLM, FastAPI, LLMOps
             </li>
             <li>
-              🏠 Real Estate Forecasting Platform — Tech: XGBoost, FAISS, FastAPI, Azure Blob, Azure SQL, Power BI
+              🏠 Real Estate Forecasting Platform — Tech: XGBoost, FAISS, FastAPI, Azure Blob,
+              Azure SQL, Power BI
             </li>
             <li>
-              🖼️ Real-Time Image Classification System — Tech: TensorFlow, CNN, Kafka, FastAPI, Docker, OpenCV
+              🖼️ Real-Time Image Classification System — Tech: TensorFlow, CNN, Kafka, FastAPI,
+              Docker, OpenCV
             </li>
             <li>
-              🩺 MachiStages of Menopause – Health Education Project — Tech: Gradient Boosting, Linear Regression, Synthetic Data, Feature Importance
+              🩺 MachiStages of Menopause – Health Education — Tech: Gradient Boosting, Linear
+              Regression, Synthetic Data, Feature Importance
             </li>
           </ul>
         </section>
@@ -311,14 +379,10 @@ export default function CVPage() {
             AWARDS &amp; CERTIFICATION
           </h2>
           <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
+            <li>Python Programming Certificate (2020) — EDUCBA Python Institute, Toronto, Canada</li>
+            <li>Certificate in AWS Cloud Architect (2018) — Metro College of Technology, Toronto</li>
             <li>
-              Python Programming Certificate (2020) — EDUCBA Python Institute, Toronto, Canada
-            </li>
-            <li>
-              Certificate in AWS Cloud Architect (2018) — Metro College of Technology, Toronto, Canada
-            </li>
-            <li>
-              Professional Diploma in Interior/Fashion Design (2012) — George Brown College, Toronto, Canada
+              Professional Diploma in Interior/Fashion Design (2012) — George Brown College, Toronto
             </li>
           </ul>
         </section>
@@ -330,10 +394,12 @@ export default function CVPage() {
           </h2>
           <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
             <li>
-              Master of Science in Data Science — HSLU (Lucerne University of Applied Sciences) | Sep 2022 – Feb 2025
+              Master of Science in Data Science — HSLU (Lucerne University of Applied Sciences) |
+              Sep 2022 – Feb 2025
             </li>
             <li>
-              Bachelor of Engineering in Electrical Engineering (Automation &amp; Control Systems) — IKIU | Sep 2007 – Jan 2011
+              Bachelor of Engineering in Electrical Engineering (Automation &amp; Control Systems) —
+              IKIU | Sep 2007 – Jan 2011
             </li>
           </ul>
         </section>
@@ -343,23 +409,70 @@ export default function CVPage() {
           <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
             SKILLS
           </h2>
-          <ul className="columns-2 md:columns-3 gap-4 list-disc list-inside text-gray-800 dark:text-gray-300 space-y-1">
-            <li>AI/ML: GPT-4, LLaMA, Hugging Face, PyTorch, TensorFlow, Scikit-learn, RLHF, QLoRA, Wav2Vec2</li>
-            <li>GenAI &amp; Agents: LangChain, LangGraph, OpenAI Assistants API, RAG, GraphRAG, Prompt Engineering</li>
-            <li>Computer Vision: YOLOv8, OpenCV, 3D Reconstruction, SLAM, Image-to-Text, WebXR, Unity3D</li>
-            <li>Data Engineering: Kafka, Airflow, FastAPI, Docker, Kubernetes, PostgreSQL, MongoDB, DBT</li>
-            <li>MLOps &amp; Deployment: CI/CD (GitHub Actions), Azure, GCP (Vertex AI, BigQuery), AWS (SageMaker)</li>
-            <li>Analytics &amp; BI: Power BI, Streamlit, SQL, Experiment Design, A/B Testing, Feature Importance</li>
-            <li>NLP &amp; Search: Text-to-SQL, Semantic Search, pgvector, Neo4j, Cypher, LangChain Tools</li>
-            <li>Software Dev: REST APIs, Pydantic, JSON, Jupyter, React (basic integration)</li>
-            <li>Soft Skills: Technical leadership, agile mindset, cross-functional teamwork, mentoring</li>
-            <li>Languages: English (fluent)</li>
+          <ul className="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-1">
+            <li>
+              <strong>AI/ML:</strong> GPT-4, LLaMA, Hugging Face, PyTorch, TensorFlow, Scikit-learn,
+              RLHF, QLoRA, Wav2Vec2
+            </li>
+            <li>
+              <strong>GenAI &amp; Agents:</strong> LangChain, LangGraph, OpenAI Assistants API, RAG,
+              GraphRAG, Prompt Engineering
+            </li>
+            <li>
+              <strong>Computer Vision:</strong> YOLOv8, OpenCV, 3D Reconstruction, SLAM, Image-to-Text,
+              WebXR, Unity3D
+            </li>
+            <li>
+              <strong>Data Engineering:</strong> Kafka, Airflow, FastAPI, Docker, Kubernetes,
+              PostgreSQL, MongoDB, DBT
+            </li>
+            <li>
+              <strong>MLOps &amp; Deployment:</strong> CI/CD (GitHub Actions), Azure, GCP (Vertex AI,
+              BigQuery), AWS (SageMaker)
+            </li>
+            <li>
+              <strong>Analytics &amp; BI:</strong> Power BI, Streamlit, SQL, Experiment Design, A/B
+              Testing, Feature Importance
+            </li>
+            <li>
+              <strong>NLP &amp; Search:</strong> Text-to-SQL, Semantic Search, pgvector, Neo4j, Cypher,
+              LangChain Tools
+            </li>
+            <li>
+              <strong>Software Dev:</strong> REST APIs, Pydantic, JSON, Jupyter, React (basic
+              integration)
+            </li>
           </ul>
+        </section>
+
+        {/* Soft Skills / Hobbies / Languages */}
+        <section>
+          <h2 className="text-2xl font-semibold border-b border-gray-300 pb-1 mb-4 text-blue-800 dark:text-blue-300">
+            SOFT SKILLS, HOBBIES &amp; LANGUAGES
+          </h2>
+          <div className="space-y-3 text-gray-800 dark:text-gray-300">
+            <p>
+              <strong>Soft Skills:</strong> Creative &amp; Innovative, Positive Attitude &amp; Empathy,
+              People-oriented &amp; Relationship-builder, Team Player &amp; Adaptable, Strong Sense of
+              Responsibility, Unwavering Work Ethic, Energetic &amp; Heartfelt.
+            </p>
+            <p>
+              <strong>Hobbies &amp; Interests:</strong> Sports (beach volleyball, skiing, hiking in the
+              Swiss Alps), painting, sculpting, watching great films, reading books, and listening
+              to podcasts on astronomy, philosophy, quantum physics, and evolution.
+            </p>
+            <p>
+              <strong>Languages:</strong> English (Fluent), Farsi (Native), German (Basic A1 — actively
+              improving).
+            </p>
+          </div>
         </section>
 
         {/* Footer */}
         <footer className="text-center py-10 mt-10 border-t border-gray-300 dark:border-gray-700">
-          <p className="text-sm mb-3">© {new Date().getFullYear()} Narges Vahdani. All rights reserved.</p>
+          <p className="text-sm mb-3">
+            © {new Date().getFullYear()} Narges Vahdani. All rights reserved.
+          </p>
           <div className="flex justify-center space-x-6">
             <a
               href="mailto:nargesvahdani@gmail.com"

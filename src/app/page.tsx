@@ -49,7 +49,7 @@ export default function Home() {
               </h3>
 
               <p>
-                I&apos;m Narges — an AI engineer and data scientist who&apos;s endlessly
+                I&apos;m Narges, an AI engineer and data scientist who&apos;s endlessly
                 curious about how things work and why people do what they do. My
                 journey into tech didn&apos;t start in a research lab; it started with
                 simple puzzles, creative projects, and a fascination with ideas.
@@ -76,13 +76,13 @@ export default function Home() {
                 people, purpose, and the energy a team builds together. I love
                 bringing clarity to ambiguous problems, connecting ideas across
                 disciplines, and creating momentum where it matters. I show up with
-                warmth, curiosity, and intention — and I do my best work in teams
+                warmth, curiosity, and intention and I do my best work in teams
                 where creativity and real-world impact meet.
               </p>
 
               <p>
                 When I&apos;m not deep in code or research, I&apos;m usually somewhere in
-                the Swiss Alps — skiing, hiking, or just breathing in the mountains.
+                the Swiss Alps, skiing, hiking, or just breathing in the mountains.
                 I paint, sculpt, redesign furniture, experiment with interior and
                 fashion concepts, and happily lose myself in books and videos about
                 astronomy, quantum physics, and the mysteries of the universe.
@@ -156,7 +156,7 @@ export default function Home() {
           <div className="relative w-full pb-[177%] md:pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-xl">
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-2xl"
-              src="https://www.youtube.com/embed/dYnQlZyq7TM"
+              src="https://m.youtube.com/shorts/EhNbYCbZwu4"
               title="Exploring in Alps"
               allowFullScreen
             ></iframe>

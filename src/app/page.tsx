@@ -12,7 +12,6 @@ export default function Home() {
     { href: '/cv', label: 'CV' },
     { href: '/projects', label: 'Projects' },
     { href: '/contact', label: 'Contact' },
-  
   ];
 
   return (
@@ -38,7 +37,10 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="flex flex-col items-center justify-center min-h-[90vh] text-center px-4 md:px-6">
+      <section
+        id="home"
+        className="flex flex-col items-center justify-center min-h-[90vh] text-center px-4 md:px-6"
+      >
         {/* Profile Picture */}
         <div className="relative mb-6 animate-fade-in">
           <Image
@@ -52,24 +54,75 @@ export default function Home() {
 
         {/* Text Block */}
         <div className="backdrop-blur-md bg-white/80 text-black p-6 md:p-10 rounded-xl shadow-xl max-w-3xl animate-slide-up text-justify space-y-4">
-          <h2 className="text-2xl md:text-4xl font-bold text-center">Narges Vahdani</h2>
-          <h3 className="text-lg md:text-xl font-semibold text-center">Data Scientist & AI Specialist</h3>
+          <h2 className="text-2xl md:text-4xl font-bold text-center">
+            Narges Vahdani
+          </h2>
+          <h3 className="text-lg md:text-xl font-semibold text-center">
+            AI Engineer &amp; Data Scientist
+          </h3>
 
-          <p> I’m Narges — a passionate and versatile Data Scientist and AI Engineer with over five years of hands-on experience building intelligent systems, machine learning pipelines, and business-driven AI solutions. I hold a Master’s degree in Data Science and have delivered transformative projects across diverse industries. My work spans from developing agentic AI platforms and automation tools at IBM Research to engineering digital twin segmentation models at Basler & Hofmann and building scalable analytics architectures at Madani Consulting. </p>
-
-          <p> My technical toolbox is deep and modern: I specialize in large language models (LLMs), retrieval-augmented generation (RAG), cloud-native pipelines (Azure, Databricks), SQL performance tuning, and neural network design. I have a proven track record of shipping models into production, optimizing end-to-end data workflows, and bringing explainable AI into real-world applications. </p>
-
-          <p> But what truly sets me apart is how I show up: I’m not just a builder — I’m a culture catalyst. My teams know me for my positive energy, curiosity, and relentless commitment to meaningful outcomes. I bring warmth to collaboration, clarity to ambiguity, and ownership to every challenge I take on. I care deeply about purpose, people, and performance — and I thrive in environments where I can grow while helping others grow. Whether it's aligning AI innovation with business impact or elevating team dynamics, I lead with intention and always strive to make the organization better than I found it. </p>
-          <p> I’m excited to contribute to a mission-driven company where curiosity, impact, and excellence are celebrated — and where my skills in AI engineering, strategic thinking, and people-first problem solving can help shape the future. </p>
           <p>
-            Outside of data, I’m a sporty and artistic soul. I love hiking, volleyball, and biking, and I channel my creativity through interior design, fashion, jewelry making, and furniture renovation. You can explore a glimpse of my artistic journey at{' '}
+            I&apos;m Narges — an AI engineer and data scientist driven by curiosity,
+            creativity, and the desire to build technology that genuinely helps
+            people. My journey didn&apos;t begin in a lab or a tech hub; it started
+            with puzzles, ideas, and a fascination with how things work. Over
+            time, that early spark grew into a career focused on intelligent
+            systems, multi-agent architectures, and AI tools that make complex
+            problems feel intuitive, human, and useful in the real world.
+          </p>
+
+          <p>
+            My path has taken me across industries and research environments. At{' '}
+            <strong>IBM Research Zurich</strong>, I built conversational
+            geospatial agents, fine-tuned LLMs with QLoRA, and engineered
+            RAG-based systems that transformed intricate NL-to-SQL tasks into
+            natural, fluid interactions. At <strong>Basler &amp; Hofmann</strong>,
+            I entered the world of digital twins — designing voxel-based CNNs
+            and LLM-driven automation to make infrastructure data smarter and
+            more accessible. At <strong>iHomeLab</strong>, I contributed to
+            real-time occupancy prediction, intelligent sensing systems, and
+            agricultural chatbots designed to support safer living and better
+            decision-making.
+          </p>
+
+          <p>
+            But I&apos;m not just a builder of systems — I&apos;m a builder of
+            energy, culture, and momentum. I work with empathy, curiosity, and
+            persistence. Teams know me as the person who brings clarity to
+            ambiguity, who connects ideas across disciplines, and who shows up
+            with warmth, positivity, and purpose. I care deeply about people,
+            the intention behind the work, and the role technology plays in
+            shaping our future.
+          </p>
+
+          <p>
+            Outside of AI, you&apos;ll find me skiing or hiking in the Swiss Alps,
+            painting, sculpting, reading about astronomy and quantum physics, or
+            chasing whatever idea captures my curiosity next.
+          </p>
+
+          <p>
+            If you&apos;d like to explore another side of me, you can visit my
+            creative art space:{' '}
             <a
               href="https://narivahdan.wixsite.com/website"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-700 underline"
             >
               my personal creative site
-            </a>.
+            </a>
+            . And if you&apos;re curious about what I&apos;m building, feel free to
+            follow my work on{' '}
+            <a
+              href="https://github.com/nargesghv"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700 underline"
+            >
+              GitHub
+            </a>
+            — there&apos;s always something new in progress.
           </p>
 
           <div className="text-center pt-4">

@@ -49,7 +49,7 @@ export default function Home() {
               <h3 className="text-lg md:text-xl font-semibold">AI Engineer & Data Scientist</h3>
 
               <p>
-                I&apos;m Narges — an AI engineer and data scientist driven by curiosity,
+                I&apos;m Narges, an AI engineer and data scientist driven by curiosity,
                 creativity, and the desire to build technology that genuinely helps
                 people. My journey didn&apos;t begin in a lab; it started with puzzles,
                 ideas, and a fascination with how things work.

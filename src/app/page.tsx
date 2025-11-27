@@ -153,11 +153,14 @@ export default function Home() {
           <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-wide">
             🎥 Exploring in the Alps
           </h3>
-          <div className="relative w-full pb-[177%] md:pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-xl">
+
+          {/* Responsive YouTube Short Embed */}
+          <div className="relative w-full pb-[177%] h-0 overflow-hidden rounded-2xl shadow-xl">
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-2xl"
-              src="https://m.youtube.com/shorts/EhNbYCbZwu4"
+              src="https://www.youtube.com/embed/EhNbYCbZwu4"
               title="Exploring in Alps"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
           </div>
@@ -210,3 +213,4 @@ export default function Home() {
     </main>
   );
 }
+

@@ -86,7 +86,7 @@ export default function Home() {
           </p>
 
           <p>
-            But I&apos;m not just a builder of systems — I&apos;m a builder of
+            But I&apos;m not just a builder of systems I&apos;m a builder of
             energy, culture, and momentum. I work with empathy, curiosity, and
             persistence. Teams know me as the person who brings clarity to
             ambiguity, who connects ideas across disciplines, and who shows up

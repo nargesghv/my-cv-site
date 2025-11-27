@@ -17,7 +17,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#fdf6f0] to-[#e7e0d8] text-black scroll-smooth">
-
       {/* Navigation */}
       <nav className="flex flex-wrap justify-between items-center px-6 md:px-10 py-4 bg-white/40 backdrop-blur-md shadow-md sticky top-0 z-50">
         <h1 className="text-xl md:text-2xl font-bold">Narges Vahdani</h1>
@@ -42,56 +41,75 @@ export default function Home() {
       <section className="flex items-center justify-center min-h-[90vh] px-4 md:px-10 py-10">
         <div className="w-full max-w-6xl bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 md:p-10 animate-slide-up">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
-
-            {/* TEXT */}
+            {/* Text Column */}
             <div className="flex-1 text-justify space-y-4">
               <h2 className="text-2xl md:text-4xl font-bold">Narges Vahdani</h2>
-              <h3 className="text-lg md:text-xl font-semibold">AI Engineer & Data Scientist</h3>
+              <h3 className="text-lg md:text-xl font-semibold">
+                AI Engineer &amp; Data Scientist
+              </h3>
 
               <p>
-                I&apos;m Narges, an AI engineer and data scientist driven by curiosity,
-                creativity, and the desire to build technology that genuinely helps
-                people. My journey didn&apos;t begin in a lab; it started with puzzles,
-                ideas, and a fascination with how things work.
+                I&apos;m Narges — an AI engineer and data scientist who&apos;s endlessly
+                curious about how things work and why people do what they do. My
+                journey into tech didn&apos;t start in a research lab; it started with
+                simple puzzles, creative projects, and a fascination with ideas.
+                Over time, that curiosity evolved into a passion for building AI
+                systems that feel intuitive, helpful, and meaningful in real life.
               </p>
 
               <p>
-                At <strong>IBM Research Zurich</strong>, I built conversational
-                geospatial agents, fine-tuned LLMs with QLoRA, and engineered
-                RAG systems for complex NL-to-SQL tasks. At <strong>Basler & Hofmann</strong>,
-                I created digital twin intelligence through voxel-based CNNs.
-                At <strong>iHomeLab</strong>, I worked on real-time sensing,
-                occupancy prediction, and agricultural AI assistants.
+                My work has taken me through some incredible environments. At{' '}
+                <strong>IBM Research Zurich</strong>, I designed conversational
+                geospatial agents, fine-tuned LLMs with QLoRA, and built RAG systems
+                that turned complicated NL-to-SQL problems into smooth, natural
+                interactions. At <strong>Basler &amp; Hofmann</strong>, I stepped into
+                the world of digital twins, using voxel-based CNNs and LLM-powered
+                automation to make infrastructure data smarter and easier to work
+                with. And at <strong>iHomeLab</strong>, I explored intelligent sensing
+                and real-time prediction systems that support safer buildings and
+                better decision-making — from elderly-care environments to tools that
+                help farmers in the field.
               </p>
 
               <p>
-                I bring warmth, clarity, and momentum to teams — shaping technology
-                with purpose, empathy, and curiosity.
+                Beyond the technical work, I&apos;m someone who cares deeply about
+                people, purpose, and the energy a team builds together. I love
+                bringing clarity to ambiguous problems, connecting ideas across
+                disciplines, and creating momentum where it matters. I show up with
+                warmth, curiosity, and intention — and I do my best work in teams
+                where creativity and real-world impact meet.
               </p>
 
               <p>
-                Outside of AI, I&apos;m happiest exploring the Swiss Alps, skiing,
-                hiking, painting, sculpting, or reading about astronomy and quantum
-                physics.
+                When I&apos;m not deep in code or research, I&apos;m usually somewhere in
+                the Swiss Alps — skiing, hiking, or just breathing in the mountains.
+                I paint, sculpt, redesign furniture, experiment with interior and
+                fashion concepts, and happily lose myself in books and videos about
+                astronomy, quantum physics, and the mysteries of the universe.
               </p>
 
               <p>
-                Explore my artistic world:
+                If you&apos;re curious about the artistic side of my life, you&apos;re
+                welcome to explore it here:{' '}
                 <a
                   href="https://narivahdan.wixsite.com/website"
                   target="_blank"
-                  className="text-blue-700 underline ml-1"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 underline"
                 >
-                  Creative Portfolio
-                </a>.
-                My AI projects live here:
+                  my creative space
+                </a>
+                . And if you want to see what I&apos;m building in AI, you can find my
+                latest experiments and projects on{' '}
                 <a
                   href="https://github.com/nargesghv"
                   target="_blank"
-                  className="text-blue-700 underline ml-1"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 underline"
                 >
                   GitHub
-                </a>.
+                </a>
+                .
               </p>
 
               <div className="pt-4">
@@ -105,9 +123,12 @@ export default function Home() {
               </div>
             </div>
 
-            {/* IMAGE */}
+            {/* Image Column */}
             <div className="w-full md:w-[45%] flex flex-col items-center">
-              <div className="relative cursor-zoom-in group" onClick={() => setZoomOpen(true)}>
+              <div
+                className="relative cursor-zoom-in group"
+                onClick={() => setZoomOpen(true)}
+              >
                 <div className="rounded-2xl overflow-hidden border-4 border-white shadow-xl w-72 h-72 md:w-96 md:h-96">
                   <Image
                     src="/picture1.jpg"
@@ -117,8 +138,6 @@ export default function Home() {
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-
-                {/* CAPTION */}
                 <p className="mt-3 text-center text-gray-700 text-sm font-semibold tracking-wide italic font-serif">
                   Alp Mountain — Interlaken, Switzerland
                 </p>
@@ -128,15 +147,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NEW — 📹 Video Section */}
+      {/* Video Section */}
       <section className="px-4 md:px-10 py-10 flex justify-center">
         <div className="w-full max-w-4xl text-center space-y-6">
-
           <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-wide">
             🎥 Exploring in the Alps
           </h3>
-
-          {/* Responsive YouTube Short */}
           <div className="relative w-full pb-[177%] md:pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-xl">
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-2xl"
@@ -148,7 +164,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ZOOM OVERLAY */}
+      {/* Zoom Overlay */}
       {zoomOpen && (
         <div
           className="fixed inset-0 z-[60] bg-black/70 flex items-center justify-center px-4"
@@ -157,10 +173,10 @@ export default function Home() {
           <div className="relative max-w-4xl w-full">
             <Image
               src="/picture1.jpg"
-              alt="Zoomed"
+              alt="Zoomed portrait of Narges in the Swiss Alps"
               width={1600}
               height={1600}
-              className="w-full h-auto rounded-2xl shadow-2xl"
+              className="w-full h-auto rounded-2xl shadow-2xl object-contain"
             />
             <button
               onClick={(e) => {

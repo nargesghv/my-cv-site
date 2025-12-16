@@ -151,14 +151,14 @@ export default function Home() {
       <section className="px-4 md:px-10 py-10 flex justify-center">
         <div className="w-full max-w-4xl text-center space-y-6">
           <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-wide">
-            🎥 Exploring in the Alps
+            🎥 Explore more about me 
           </h3>
 
           {/* Responsive YouTube Short Embed */}
           <div className="relative w-full pb-[177%] h-0 overflow-hidden rounded-2xl shadow-xl">
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-2xl"
-              src="https://www.youtube.com/embed/EhNbYCbZwu4"
+              src="https://www.youtube.com/shorts/gkBJSAM7Dl4"
               title="Exploring in Alps"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
